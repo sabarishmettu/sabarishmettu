@@ -54,6 +54,7 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
           config_display: large
+          config_padding: 0, 0
           extras_css: |
             * { font-family: 'Segoe UI', system-ui, sans-serif; }
             h2, h3, span, text { color: #c9d1d9 !important; fill: #c9d1d9 !important; }
