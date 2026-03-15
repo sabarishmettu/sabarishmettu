@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid slice" width="1200" height="300">
   <defs>
     <style>
-      /* --- BACKGROUND & FADES --- */
+      /* --- BACKGROUND AND FADES --- */
       .bg { fill: #0d1117; }
       .horizon-glow { fill: url(#glowGrad); }
 
@@ -162,7 +162,7 @@
   <!-- Horizon glow line -->
   <line x1="0" y1="110" x2="1200" y2="110" stroke="#45dccc" stroke-width="6" opacity="0.3" filter="drop-shadow(0 -5px 10px #45dccc)"/>
 
-  <!-- Typing Effect Text & Cursors -->
+  <!-- Typing Effect Text AND Cursors -->
   <g class="type-container" transform="translate(0, 130)">
     
     <!-- Phrase 1: "Hi, I'm Sabarish" -->
