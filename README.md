@@ -1,16 +1,22 @@
-## Hi there 👋
+<img src="grid-banner.svg" width="100%" alt="banner"/>
 
-<!--
-**sabarishmettu/sabarishmettu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<table>
+  <tr>
+    <td width="65%">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="isocalendar-dark.svg"/>
+        <source media="(prefers-color-scheme: light)" srcset="isocalendar.svg"/>
+        <img src="isocalendar.svg" alt="Isometric Commit Calendar"/>
+      </picture>
+    </td>
+    <td width="35%" align="center">
+      <img src="Sabarish Pixal Avatar.gif" width="220" alt="Sabarish Pixel Avatar"/>
+    </td>
+  </tr>
+</table>
 
-Here are some ideas to get you started:
+<img src="topics.svg" width="100%" alt="Starred Topics"/>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<div align="center">
+  <img src="github-octopuss (3).gif" width="50" alt="octocat"/>
+</div>

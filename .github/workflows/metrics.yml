@@ -1,0 +1,89 @@
+name: Generate Metrics
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Daily at midnight UTC
+  workflow_dispatch:       # Manual trigger
+  push:
+    branches: [main]
+
+jobs:
+  # Isometric Calendar (Light Mode)
+  isocalendar-light:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: isocalendar.svg
+          user: sabarishmettu
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          config_display: large
+          extras_css: |
+            * { font-family: 'Segoe UI', system-ui, sans-serif; }
+            .isocalendar svg rect[fill="#9be9a8"],
+            .isocalendar svg rect[fill="#40c463"],
+            .isocalendar svg rect[fill="#30a14e"],
+            .isocalendar svg rect[fill="#216e39"] { fill: #45dccc !important; }
+            .isocalendar svg rect[fill="#9be9a8"] { fill: #45dccc66 !important; }
+            .isocalendar svg rect[fill="#40c463"] { fill: #45dccc99 !important; }
+            .isocalendar svg rect[fill="#30a14e"] { fill: #45dccccc !important; }
+            .isocalendar svg rect[fill="#216e39"] { fill: #45dccc !important; }
+            svg { --color-calendar-graph-day-L1-bg: #45dccc44; --color-calendar-graph-day-L2-bg: #45dccc77; --color-calendar-graph-day-L3-bg: #45dcccbb; --color-calendar-graph-day-L4-bg: #45dccc; }
+            .isocalendar path[fill="#9be9a8"] { fill: #45dccc55 !important; }
+            .isocalendar path[fill="#40c463"] { fill: #45dccc88 !important; }
+            .isocalendar path[fill="#30a14e"] { fill: #45dcccbb !important; }
+            .isocalendar path[fill="#216e39"] { fill: #45dccc !important; }
+
+  # Isometric Calendar (Dark Mode)
+  isocalendar-dark:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: isocalendar-dark.svg
+          user: sabarishmettu
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          config_display: large
+          extras_css: |
+            * { font-family: 'Segoe UI', system-ui, sans-serif; }
+            h2, h3, span, text { color: #c9d1d9 !important; fill: #c9d1d9 !important; }
+            .isocalendar svg rect[fill="#9be9a8"],
+            .isocalendar svg rect[fill="#40c463"],
+            .isocalendar svg rect[fill="#30a14e"],
+            .isocalendar svg rect[fill="#216e39"] { fill: #45dccc !important; }
+            .isocalendar svg rect[fill="#9be9a8"] { fill: #45dccc66 !important; }
+            .isocalendar svg rect[fill="#40c463"] { fill: #45dccc99 !important; }
+            .isocalendar svg rect[fill="#30a14e"] { fill: #45dccccc !important; }
+            .isocalendar svg rect[fill="#216e39"] { fill: #45dccc !important; }
+            svg { --color-calendar-graph-day-L1-bg: #45dccc44; --color-calendar-graph-day-L2-bg: #45dccc77; --color-calendar-graph-day-L3-bg: #45dcccbb; --color-calendar-graph-day-L4-bg: #45dccc; }
+            .isocalendar path[fill="#9be9a8"] { fill: #45dccc55 !important; }
+            .isocalendar path[fill="#40c463"] { fill: #45dccc88 !important; }
+            .isocalendar path[fill="#30a14e"] { fill: #45dcccbb !important; }
+            .isocalendar path[fill="#216e39"] { fill: #45dccc !important; }
+
+  # Starred Topics
+  topics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: topics.svg
+          user: sabarishmettu
+          base: ""
+          plugin_topics: yes
+          plugin_topics_mode: icons
+          plugin_topics_sort: stars
+          plugin_topics_limit: 15
