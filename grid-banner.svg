@@ -5,59 +5,42 @@
       .bg { fill: #0d1117; }
       .horizon-glow { fill: url(#glowGrad); }
 
-      /* --- ENDLESS 3D GRID PERSPECTIVE SCROLLING --- */
-      /* 
-         To create a true endless loop without gaps, the grid container scales and translates
-         over 3 seconds, exactly matching the perspective transformation of the next cell.
-         When the animation restarts, it snaps back seamlessly.
-      */
-      @keyframes endlessScroll {
-        0% { transform: scale(1) translateY(0px); opacity: 0; }
-        5% { opacity: 1; }
-        90% { opacity: 1; }
-        100% { transform: scale(1.5) translateY(50px); opacity: 0; }
-      }
-      
-      .grid-layer {
-        transform-origin: 600px 100px; /* Horizon line */
-        animation: endlessScroll 3s linear infinite;
-      }
-      .grid-layer.delay-1 { animation-delay: -1s; }
-      .grid-layer.delay-2 { animation-delay: -2s; }
-      
+      /* --- HIGH FIDELITY STATIC 3D GRID --- */
       .grid-lines {
         stroke: #45dccc;
-        stroke-width: 1.5px;
-        opacity: 0.6;
+        stroke-width: 1.5;
+        opacity: 0.3;
       }
-      .grid-glow {
+      
+      /* --- LASER DATA PULSES --- */
+      /* We animate stroke-dashoffset to make glowing lines "travel" along the perspective paths */
+      @keyframes pulseTravel {
+        0% { stroke-dashoffset: 1500; opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { stroke-dashoffset: 0; opacity: 0; }
+      }
+      
+      .data-pulse {
         stroke: #45dccc;
-        stroke-width: 4px;
-        opacity: 0.2;
-        filter: drop-shadow(0 0 5px #45dccc);
+        stroke-width: 3;
+        stroke-dasharray: 100 1400; /* Short dash, huge gap */
+        opacity: 0;
+        filter: drop-shadow(0 0 8px #45dccc) drop-shadow(0 0 20px #45dccc);
+        animation: pulseTravel 4s linear infinite;
       }
+      
+      /* Stagger the laser pulses so they don't all shoot at once */
+      .pulse--1 { animation-delay: 0s; }
+      .pulse--2 { animation-delay: 1.2s; }
+      .pulse--3 { animation-delay: 2.7s; }
+      .pulse--4 { animation-delay: 0.5s; }
+      .pulse--5 { animation-delay: 3.1s; }
+      .pulse--6 { animation-delay: 1.8s; }
+      .pulse--7 { animation-delay: 2.3s; }
+      .pulse--8 { animation-delay: 0.9s; }
 
       /* --- TYPING EFFECT --- */
-      @keyframes typing {
-        0%, 15% { width: 0; } /* Start empty */
-        30%, 50% { width: 100%; } /* Type it out, then hold */
-        70%, 100% { width: 0; } /* Backspace it, hold empty */
-      }
-      @keyframes blink {
-        50% { border-color: transparent; }
-      }
-      
-      .type-container {
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 32px;
-        font-weight: bold;
-        fill: #45dccc;
-        filter: drop-shadow(0 0 5px #45dccc);
-      }
-
-      /* Each sentence has a fixed width div equivalent in SVG using a rect clip-path later,
-         but in raw SVG it's easier to use discrete CSS animations on the `clipPath` rect itself. */
-      
       @keyframes clip1 {
         0%, 5% { width: 0; }
         15%, 25% { width: 400px; } /* Hi, I'm Sabarish */
@@ -77,8 +60,19 @@
         86%, 91% { width: 850px; } /* Hold */
         100% { width: 0; } /* Backspace */
       }
+      
+      @keyframes blink {
+        50% { border-color: transparent; }
+      }
+      
+      .type-container {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 32px;
+        font-weight: bold;
+        fill: #45dccc;
+        filter: drop-shadow(0 0 6px #45dccc);
+      }
 
-      /* The blinking cursor needs to follow the clip width */
       .caret-1 { animation: clip1 12s infinite, blink 0.7s infinite; stroke: #45dccc; stroke-width: 4px; }
       .caret-2 { animation: clip2 12s infinite, blink 0.7s infinite; stroke: #45dccc; stroke-width: 4px; }
       .caret-3 { animation: clip3 12s infinite, blink 0.7s infinite; stroke: #45dccc; stroke-width: 4px; }
@@ -93,12 +87,11 @@
 
     </style>
 
-    <radialGradient id="glowGrad" cx="50%" cy="10%" r="90%">
-      <stop offset="0%" stop-color="#45dccc" stop-opacity="0.15"/>
+    <radialGradient id="glowGrad" cx="50%" cy="20%" r="80%">
+      <stop offset="0%" stop-color="#45dccc" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#45dccc" stop-opacity="0"/>
     </radialGradient>
     
-    <!-- Clipping paths for the typing text -->
     <clipPath id="typeClip1">
       <rect class="clip-rect-1" x="430" y="100" />
     </clipPath>
@@ -109,58 +102,80 @@
       <rect class="clip-rect-3" x="200" y="100" />
     </clipPath>
     
-    <!-- Grid Path Definition (Exponential perspective spreading from y=100) -->
-    <!-- We draw exactly one "unit" of perspective that seamlessly scales into itself -->
-    <path id="perspectiveGrid" d="
-      M -1000 120 L 2200 120
-      M -1500 150 L 2700 150
-      M -2000 210 L 3200 210
-      M -3000 330 L 4200 330
-      M -5000 570 L 6200 570
-      
-      M 600 100 L 600 600
-      M 600 100 L 300 600
-      M 600 100 L 900 600
-      M 600 100 L 0 600
-      M 600 100 L 1200 600
-      M 600 100 L -300 600
-      M 600 100 L 1500 600
-      M 600 100 L -600 600
-      M 600 100 L 1800 600
-      M 600 100 L -900 600
-      M 600 100 L 2100 600
-      M 600 100 L -1200 600
-      M 600 100 L 2400 600
-      M 600 100 L -1500 600
-      M 600 100 L 2700 600
-    " fill="none"/>
+    <!-- We define the straight V-lines once, originating from vanishing point 600,100 -->
+    <!-- Line formats: M 600 100 L endpoint_x 300 -->
+    <g id="verticalRays">
+      <line x1="600" y1="100" x2="-600" y2="300" />
+      <line x1="600" y1="100" x2="-350" y2="300" />
+      <line x1="600" y1="100" x2="-150" y2="300" />
+      <line x1="600" y1="100" x2="30" y2="300" />
+      <line x1="600" y1="100" x2="180" y2="300" />
+      <line x1="600" y1="100" x2="320" y2="300" />
+      <line x1="600" y1="100" x2="460" y2="300" />
+      <line x1="600" y1="100" x2="600" y2="300" /> <!-- Center -->
+      <line x1="600" y1="100" x2="740" y2="300" />
+      <line x1="600" y1="100" x2="880" y2="300" />
+      <line x1="600" y1="100" x2="1020" y2="300" />
+      <line x1="600" y1="100" x2="1170" y2="300" />
+      <line x1="600" y1="100" x2="1350" y2="300" />
+      <line x1="600" y1="100" x2="1550" y2="300" />
+      <line x1="600" y1="100" x2="1800" y2="300" />
+    </g>
+
+    <!-- Horizontal logarithmically spaced depth lines -->
+    <g id="horizontalDepths">
+      <!-- y = 100 + 10 * 1.3^n -->
+      <line x1="0" y1="110" x2="1200" y2="110" />
+      <line x1="0" y1="113" x2="1200" y2="113" />
+      <line x1="0" y1="117" x2="1200" y2="117" />
+      <line x1="0" y1="122" x2="1200" y2="122" />
+      <line x1="0" y1="128" x2="1200" y2="128" />
+      <line x1="0" y1="137" x2="1200" y2="137" />
+      <line x1="0" y1="148" x2="1200" y2="148" />
+      <line x1="0" y1="162" x2="1200" y2="162" />
+      <line x1="0" y1="181" x2="1200" y2="181" />
+      <line x1="0" y1="206" x2="1200" y2="206" />
+      <line x1="0" y1="238" x2="1200" y2="238" />
+      <line x1="0" y1="279" x2="1200" y2="279" />
+      <line x1="0" y1="333" x2="1200" y2="333" />
+    </g>
   </defs>
 
-  <!-- Background -->
+  <!-- Solid Background -->
   <rect class="bg" width="1200" height="300" />
-  <rect class="horizon-glow" width="1200" height="300" y="50" />
+  <rect class="horizon-glow" width="1200" height="300" y="30" />
 
-  <!-- The 3 layered endless grids -->
-  <!-- We use 3 identically scaling layers offset by 1 second to create a continuous tunnel flow -->
-  <g class="grid-layer">
-    <use href="#perspectiveGrid" class="grid-glow" />
-    <use href="#perspectiveGrid" class="grid-lines" />
-  </g>
-  <g class="grid-layer delay-1">
-    <use href="#perspectiveGrid" class="grid-glow" />
-    <use href="#perspectiveGrid" class="grid-lines" />
-  </g>
-  <g class="grid-layer delay-2">
-    <use href="#perspectiveGrid" class="grid-glow" />
-    <use href="#perspectiveGrid" class="grid-lines" />
+  <!-- Dims the area below the horizon so lines don't show above it -->
+  <!-- We do this by applying the drawing exactly where we want it -->
+
+  <g class="grid-lines" clip-path="url(#horizonCutoff)">
+    <!-- Base static 3D Floor -->
+    <use href="#verticalRays" />
+    <use href="#horizontalDepths" />
   </g>
 
-  <!-- Dark fade overlay at the horizon so lines emerge smoothly -->
-  <rect x="0" y="0" width="1200" height="110" fill="#0d1117" />
-  <line x1="0" y1="110" x2="1200" y2="110" stroke="#45dccc" stroke-width="2" opacity="0.8"/>
-  
-  <!-- Horizon glow line -->
-  <line x1="0" y1="110" x2="1200" y2="110" stroke="#45dccc" stroke-width="6" opacity="0.3" filter="drop-shadow(0 -5px 10px #45dccc)"/>
+  <!-- Glow effect overlay -->
+  <g class="grid-lines" opacity="0.3" filter="drop-shadow(0 0 4px #45dccc)" clip-path="url(#horizonCutoff)">
+    <use href="#horizontalDepths" />
+  </g>
+
+  <!-- THE ANIMATED LASER PULSES -->
+  <!-- Placed perfectly on top of the vertical perspective paths -->
+  <g opacity="0.8">
+    <line class="data-pulse pulse--1" x1="600" y1="100" x2="-350" y2="300" />
+    <line class="data-pulse pulse--2" x1="600" y1="100" x2="1550" y2="300" />
+    <line class="data-pulse pulse--3" x1="600" y1="100" x2="180" y2="300" />
+    <line class="data-pulse pulse--4" x1="600" y1="100" x2="1020" y2="300" />
+    <line class="data-pulse pulse--5" x1="600" y1="100" x2="460" y2="300" />
+    <line class="data-pulse pulse--6" x1="600" y1="100" x2="880" y2="300" />
+    <line class="data-pulse pulse--7" x1="600" y1="100" x2="-150" y2="300" />
+    <line class="data-pulse pulse--8" x1="600" y1="100" x2="740" y2="300" />
+  </g>
+
+  <!-- Horizon line and blackout cover -->
+  <rect x="0" y="0" width="1200" height="108" fill="#0d1117" />
+  <line x1="0" y1="108" x2="1200" y2="108" stroke="#45dccc" stroke-width="3" filter="drop-shadow(0 0 10px #45dccc)"/>
+  <line x1="0" y1="108" x2="1200" y2="108" stroke="#ffffff" stroke-width="1" opacity="0.8"/>
 
   <!-- Typing Effect Text AND Cursors -->
   <g class="type-container" transform="translate(0, 130)">
@@ -186,4 +201,12 @@
     <polyline points="1200,270 1200,300 1170,300"/>
     <polyline points="30,300 0,300 0,270"/>
   </g>
+
+  <!-- Clip path to keep grid strictly below horizon -->
+  <defs>
+    <clipPath id="horizonCutoff">
+      <rect x="0" y="108" width="1200" height="200" />
+    </clipPath>
+  </defs>
+
 </svg>
