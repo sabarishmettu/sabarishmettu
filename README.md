@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/sabarishmettu/sabarishmettu/main/grid-banner.svg?commit=1289bac68129d29d1979b18edb07262869adf19c" width="100%" alt="banner"/>
+<img src="https://raw.githubusercontent.com/sabarishmettu/sabarishmettu/main/grid-banner.svg?commit=47b69a55ba0abbcb877e1724a74108eab3ecb82c" width="100%" alt="banner"/>
 
 <div align="center">
   <picture>
