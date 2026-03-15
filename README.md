@@ -1,4 +1,4 @@
-<img src="grid-banner.svg?v=3" width="100%" alt="banner"/>
+<img src="grid-banner.svg?v=5" width="100%" alt="banner"/>
 
 <div align="center">
   <picture>

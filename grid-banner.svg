@@ -1,113 +1,189 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid slice">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid slice" width="1200" height="300">
   <defs>
     <style>
-      @keyframes gridPulse {
-        0%, 100% { opacity: 0.4; }
-        50% { opacity: 1; }
+      /* --- BACKGROUND & FADES --- */
+      .bg { fill: #0d1117; }
+      .horizon-glow { fill: url(#glowGrad); }
+
+      /* --- ENDLESS 3D GRID PERSPECTIVE SCROLLING --- */
+      /* 
+         To create a true endless loop without gaps, the grid container scales and translates
+         over 3 seconds, exactly matching the perspective transformation of the next cell.
+         When the animation restarts, it snaps back seamlessly.
+      */
+      @keyframes endlessScroll {
+        0% { transform: scale(1) translateY(0px); opacity: 0; }
+        5% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { transform: scale(1.5) translateY(50px); opacity: 0; }
       }
-      @keyframes gridScroll {
-        0% { transform: translateY(0); }
-        100% { transform: translateY(30px); }
+      
+      .grid-layer {
+        transform-origin: 600px 100px; /* Horizon line */
+        animation: endlessScroll 3s linear infinite;
       }
-      @keyframes horizGlow {
-        0%, 100% { stroke-opacity: 0.3; }
-        50% { stroke-opacity: 0.8; }
+      .grid-layer.delay-1 { animation-delay: -1s; }
+      .grid-layer.delay-2 { animation-delay: -2s; }
+      
+      .grid-lines {
+        stroke: #45dccc;
+        stroke-width: 1.5px;
+        opacity: 0.6;
       }
-      @keyframes titleGlow {
-        0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 8px #45dccc); }
-        50% { opacity: 1; filter: drop-shadow(0 0 20px #45dccc) drop-shadow(0 0 40px #45dccc55); }
+      .grid-glow {
+        stroke: #45dccc;
+        stroke-width: 4px;
+        opacity: 0.2;
+        filter: drop-shadow(0 0 5px #45dccc);
       }
-      @keyframes scanLine {
-        0% { transform: translateY(-10px); opacity: 0; }
-        10% { opacity: 0.6; }
-        90% { opacity: 0.6; }
-        100% { transform: translateY(310px); opacity: 0; }
+
+      /* --- TYPING EFFECT --- */
+      @keyframes typing {
+        0%, 15% { width: 0; } /* Start empty */
+        30%, 50% { width: 100%; } /* Type it out, then hold */
+        70%, 100% { width: 0; } /* Backspace it, hold empty */
       }
-      .grid-v { animation: gridPulse 4s ease-in-out infinite; }
-      .grid-v:nth-child(odd) { animation-delay: -2s; }
-      .grid-h { animation: horizGlow 5s ease-in-out infinite; }
-      .grid-h:nth-child(even) { animation-delay: -2.5s; }
-      .title-text { animation: titleGlow 3s ease-in-out infinite; }
-      .scan { animation: scanLine 6s linear infinite; }
+      @keyframes blink {
+        50% { border-color: transparent; }
+      }
+      
+      .type-container {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 32px;
+        font-weight: bold;
+        fill: #45dccc;
+        text-shadow: 0 0 10px #45dccc, 0 0 20px #45dccc;
+      }
+
+      /* Each sentence has a fixed width div equivalent in SVG using a rect clip-path later,
+         but in raw SVG it's easier to use discrete CSS animations on the `clipPath` rect itself. */
+      
+      @keyframes clip1 {
+        0%, 5% { width: 0; }
+        15%, 25% { width: 400px; } /* Hi, I'm Sabarish */
+        33% { width: 0; }
+        100% { width: 0; }
+      }
+      @keyframes clip2 {
+        0%, 33% { width: 0; }
+        38%, 43% { width: 350px; } /* By 43% it's typed out */
+        53%, 58% { width: 350px; } /* Hold */
+        66% { width: 0; } /* Backspace */
+        100% { width: 0; }
+      }
+      @keyframes clip3 {
+        0%, 66% { width: 0; }
+        71%, 76% { width: 850px; } /* my main work... */
+        86%, 91% { width: 850px; } /* Hold */
+        100% { width: 0; } /* Backspace */
+      }
+
+      /* The blinking cursor needs to follow the clip width */
+      .caret-1 { animation: clip1 12s infinite, blink 0.7s infinite; stroke: #45dccc; stroke-width: 4px; }
+      .caret-2 { animation: clip2 12s infinite, blink 0.7s infinite; stroke: #45dccc; stroke-width: 4px; }
+      .caret-3 { animation: clip3 12s infinite, blink 0.7s infinite; stroke: #45dccc; stroke-width: 4px; }
+
+      .text-1 { clip-path: url(#typeClip1); }
+      .text-2 { clip-path: url(#typeClip2); }
+      .text-3 { clip-path: url(#typeClip3); }
+      
+      .clip-rect-1 { height: 50px; animation: clip1 12s steps(20, end) infinite; }
+      .clip-rect-2 { height: 50px; animation: clip2 12s steps(20, end) infinite; }
+      .clip-rect-3 { height: 50px; animation: clip3 12s steps(40, end) infinite; }
+
     </style>
-    <linearGradient id="gridFade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#45dccc" stop-opacity="0"/>
-      <stop offset="40%" stop-color="#45dccc" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#45dccc" stop-opacity="0.15"/>
-    </linearGradient>
-    <linearGradient id="horizFade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#45dccc" stop-opacity="0"/>
-      <stop offset="20%" stop-color="#45dccc" stop-opacity="0.5"/>
-      <stop offset="80%" stop-color="#45dccc" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#45dccc" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="centerGlow" cx="50%" cy="60%" r="50%">
-      <stop offset="0%" stop-color="#45dccc" stop-opacity="0.08"/>
+
+    <radialGradient id="glowGrad" cx="50%" cy="10%" r="90%">
+      <stop offset="0%" stop-color="#45dccc" stop-opacity="0.15"/>
       <stop offset="100%" stop-color="#45dccc" stop-opacity="0"/>
     </radialGradient>
+    
+    <!-- Clipping paths for the typing text -->
+    <clipPath id="typeClip1">
+      <rect class="clip-rect-1" x="430" y="100" />
+    </clipPath>
+    <clipPath id="typeClip2">
+      <rect class="clip-rect-2" x="460" y="100" />
+    </clipPath>
+    <clipPath id="typeClip3">
+      <rect class="clip-rect-3" x="200" y="100" />
+    </clipPath>
+    
+    <!-- Grid Path Definition (Exponential perspective spreading from y=100) -->
+    <!-- We draw exactly one "unit" of perspective that seamlessly scales into itself -->
+    <path id="perspectiveGrid" d="
+      M -1000 120 L 2200 120
+      M -1500 150 L 2700 150
+      M -2000 210 L 3200 210
+      M -3000 330 L 4200 330
+      M -5000 570 L 6200 570
+      
+      M 600 100 L 600 600
+      M 600 100 L 300 600
+      M 600 100 L 900 600
+      M 600 100 L 0 600
+      M 600 100 L 1200 600
+      M 600 100 L -300 600
+      M 600 100 L 1500 600
+      M 600 100 L -600 600
+      M 600 100 L 1800 600
+      M 600 100 L -900 600
+      M 600 100 L 2100 600
+      M 600 100 L -1200 600
+      M 600 100 L 2400 600
+      M 600 100 L -1500 600
+      M 600 100 L 2700 600
+    " fill="none"/>
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="300" fill="#0d1117"/>
-  <rect width="1200" height="300" fill="url(#centerGlow)"/>
+  <rect class="bg" width="1200" height="300" />
+  <rect class="horizon-glow" width="1200" height="300" y="50" />
 
-  <!-- 3D Perspective Grid -->
-  <g transform="translate(600,300) scale(1,-1) rotate(0)" style="transform-origin: 600px 150px;">
-
-    <!-- Vertical lines with perspective convergence -->
-    <g class="grid-v">
-      <line x1="-600" y1="0" x2="-150" y2="280" stroke="url(#gridFade)" stroke-width="0.5"/>
-      <line x1="-500" y1="0" x2="-120" y2="280" stroke="url(#gridFade)" stroke-width="0.5"/>
-      <line x1="-400" y1="0" x2="-90" y2="280" stroke="url(#gridFade)" stroke-width="0.6"/>
-      <line x1="-300" y1="0" x2="-60" y2="280" stroke="url(#gridFade)" stroke-width="0.6"/>
-      <line x1="-200" y1="0" x2="-30" y2="280" stroke="url(#gridFade)" stroke-width="0.7"/>
-      <line x1="-100" y1="0" x2="-10" y2="280" stroke="url(#gridFade)" stroke-width="0.8"/>
-      <line x1="0" y1="0" x2="0" y2="280" stroke="url(#gridFade)" stroke-width="1"/>
-      <line x1="100" y1="0" x2="10" y2="280" stroke="url(#gridFade)" stroke-width="0.8"/>
-      <line x1="200" y1="0" x2="30" y2="280" stroke="url(#gridFade)" stroke-width="0.7"/>
-      <line x1="300" y1="0" x2="60" y2="280" stroke="url(#gridFade)" stroke-width="0.6"/>
-      <line x1="400" y1="0" x2="90" y2="280" stroke="url(#gridFade)" stroke-width="0.6"/>
-      <line x1="500" y1="0" x2="120" y2="280" stroke="url(#gridFade)" stroke-width="0.5"/>
-      <line x1="600" y1="0" x2="150" y2="280" stroke="url(#gridFade)" stroke-width="0.5"/>
-    </g>
-
-    <!-- Horizontal lines -->
-    <line class="grid-h" x1="-600" y1="20" x2="600" y2="20" stroke="url(#horizFade)" stroke-width="0.4"/>
-    <line class="grid-h" x1="-580" y1="50" x2="580" y2="50" stroke="url(#horizFade)" stroke-width="0.5"/>
-    <line class="grid-h" x1="-540" y1="80" x2="540" y2="80" stroke="url(#horizFade)" stroke-width="0.5"/>
-    <line class="grid-h" x1="-480" y1="110" x2="480" y2="110" stroke="url(#horizFade)" stroke-width="0.6"/>
-    <line class="grid-h" x1="-400" y1="140" x2="400" y2="140" stroke="url(#horizFade)" stroke-width="0.6"/>
-    <line class="grid-h" x1="-320" y1="170" x2="320" y2="170" stroke="url(#horizFade)" stroke-width="0.7"/>
-    <line class="grid-h" x1="-240" y1="200" x2="240" y2="200" stroke="url(#horizFade)" stroke-width="0.7"/>
-    <line class="grid-h" x1="-160" y1="230" x2="160" y2="230" stroke="url(#horizFade)" stroke-width="0.8"/>
-    <line class="grid-h" x1="-80" y1="260" x2="80" y2="260" stroke="url(#horizFade)" stroke-width="0.9"/>
-
+  <!-- The 3 layered endless grids -->
+  <!-- We use 3 identically scaling layers offset by 1 second to create a continuous tunnel flow -->
+  <g class="grid-layer">
+    <use href="#perspectiveGrid" class="grid-glow" />
+    <use href="#perspectiveGrid" class="grid-lines" />
+  </g>
+  <g class="grid-layer delay-1">
+    <use href="#perspectiveGrid" class="grid-glow" />
+    <use href="#perspectiveGrid" class="grid-lines" />
+  </g>
+  <g class="grid-layer delay-2">
+    <use href="#perspectiveGrid" class="grid-glow" />
+    <use href="#perspectiveGrid" class="grid-lines" />
   </g>
 
-  <!-- Scan line effect -->
-  <rect class="scan" x="0" y="-10" width="1200" height="2" fill="#45dccc" opacity="0.4"/>
+  <!-- Dark fade overlay at the horizon so lines emerge smoothly -->
+  <rect x="0" y="0" width="1200" height="110" fill="#0d1117" />
+  <line x1="0" y1="110" x2="1200" y2="110" stroke="#45dccc" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Horizon glow line -->
+  <line x1="0" y1="110" x2="1200" y2="110" stroke="#45dccc" stroke-width="6" opacity="0.3" filter="drop-shadow(0 -5px 10px #45dccc)"/>
 
-  <!-- Corner accents -->
-  <g stroke="#45dccc" stroke-width="1.5" fill="none" opacity="0.6">
+  <!-- Typing Effect Text & Cursors -->
+  <g class="type-container" transform="translate(0, 130)">
+    
+    <!-- Phrase 1: "Hi, I'm Sabarish" -->
+    <text class="text-1" x="430" y="0">Hi, I'm Sabarish</text>
+    <line class="caret-1" x1="432" y1="-28" x2="432" y2="6"/>
+    
+    <!-- Phrase 2: "I'm a Developer" -->
+    <text class="text-2" x="460" y="0">I'm a Developer</text>
+    <line class="caret-2" x1="462" y1="-28" x2="462" y2="6"/>
+    
+    <!-- Phrase 3: "my main work creating imaginary to reality" -->
+    <text class="text-3" x="200" y="0">my main work creating imaginary to reality</text>
+    <line class="caret-3" x1="202" y1="-28" x2="202" y2="6"/>
+    
+  </g>
+  
+  <!-- Corner Tech accents -->
+  <g stroke="#45dccc" stroke-width="2" fill="none" opacity="0.7">
     <polyline points="0,30 0,0 30,0"/>
     <polyline points="1170,0 1200,0 1200,30"/>
     <polyline points="1200,270 1200,300 1170,300"/>
     <polyline points="30,300 0,300 0,270"/>
   </g>
-
-  <!-- Decorative dots -->
-  <circle cx="40" cy="10" r="2" fill="#45dccc" opacity="0.5"/>
-  <circle cx="55" cy="10" r="2" fill="#45dccc" opacity="0.3"/>
-  <circle cx="70" cy="10" r="2" fill="#45dccc" opacity="0.5"/>
-  <circle cx="1130" cy="290" r="2" fill="#45dccc" opacity="0.5"/>
-  <circle cx="1145" cy="290" r="2" fill="#45dccc" opacity="0.3"/>
-  <circle cx="1160" cy="290" r="2" fill="#45dccc" opacity="0.5"/>
-
-  <!-- Title -->
-  <text class="title-text" x="600" y="135" text-anchor="middle" font-family="'Courier New', monospace" font-size="34" font-weight="bold" fill="#45dccc" letter-spacing="6">
-    Sabarish Github profile DEVELOPER
-  </text>
-  <text x="600" y="170" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#45dccc" opacity="0.6" letter-spacing="3">
-    main work creating imaginary to reality
-  </text>
 </svg>
