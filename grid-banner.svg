@@ -40,26 +40,8 @@
       .pulse--7 { animation-delay: 2.3s; }
       .pulse--8 { animation-delay: 0.9s; }
 
-      /* --- TYPING EFFECT --- */
-      @keyframes clip1 {
-        0%, 5% { width: 0; }
-        15%, 25% { width: 400px; } /* Hi, I'm Sabarish */
-        33% { width: 0; }
-        100% { width: 0; }
-      }
-      @keyframes clip2 {
-        0%, 33% { width: 0; }
-        38%, 43% { width: 350px; } /* By 43% it's typed out */
-        53%, 58% { width: 350px; } /* Hold */
-        66% { width: 0; } /* Backspace */
-        100% { width: 0; }
-      }
-      @keyframes clip3 {
-        0%, 66% { width: 0; }
-        71%, 76% { width: 850px; } /* my main work... */
-        86%, 91% { width: 850px; } /* Hold */
-        100% { width: 0; } /* Backspace */
-      }
+      /* --- TYPING EFFECT (SMIL DRIVEN) --- */
+      /* SMIL natively handles timing and visibility in SVG, bypassing all CSS bugs */
       
       @keyframes blink {
         50% { border-color: transparent; }
@@ -72,18 +54,8 @@
         fill: #45dccc;
         filter: drop-shadow(0 0 6px #45dccc);
       }
-
-      .caret-1 { animation: clip1 12s infinite, blink 0.7s infinite; stroke: #45dccc; stroke-width: 4px; }
-      .caret-2 { animation: clip2 12s infinite, blink 0.7s infinite; stroke: #45dccc; stroke-width: 4px; }
-      .caret-3 { animation: clip3 12s infinite, blink 0.7s infinite; stroke: #45dccc; stroke-width: 4px; }
-
-      .text-1 { clip-path: url(#typeClip1); }
-      .text-2 { clip-path: url(#typeClip2); }
-      .text-3 { clip-path: url(#typeClip3); }
       
-      .clip-rect-1 { height: 50px; animation: clip1 12s steps(20, end) infinite; }
-      .clip-rect-2 { height: 50px; animation: clip2 12s steps(20, end) infinite; }
-      .clip-rect-3 { height: 50px; animation: clip3 12s steps(40, end) infinite; }
+      .caret { fill: #45dccc; }
 
     </style>
 
@@ -93,13 +65,24 @@
     </radialGradient>
     
     <clipPath id="typeClip1">
-      <rect class="clip-rect-1" x="430" y="100" />
+      <rect x="430" y="-50" height="100" width="0">
+        <animate attributeName="width" values="0; 0; 310; 310; 0; 0" keyTimes="0; 0.05; 0.15; 0.25; 0.3; 1" dur="15s" repeatCount="indefinite" calcMode="discrete"/>
+      </rect>
     </clipPath>
     <clipPath id="typeClip2">
-      <rect class="clip-rect-2" x="460" y="100" />
+      <rect x="440" y="-50" height="100" width="0">
+        <animate attributeName="width" values="0; 0; 290; 290; 0; 0" keyTimes="0; 0.38; 0.48; 0.58; 0.63; 1" dur="15s" repeatCount="indefinite" calcMode="discrete"/>
+      </rect>
     </clipPath>
     <clipPath id="typeClip3">
-      <rect class="clip-rect-3" x="200" y="100" />
+      <rect x="180" y="-50" height="100" width="0">
+        <animate attributeName="width" values="0; 0; 780; 780; 0; 0" keyTimes="0; 0.71; 0.81; 0.91; 0.96; 1" dur="15s" repeatCount="indefinite" calcMode="discrete"/>
+      </rect>
+    </clipPath>
+    
+    <!-- Clip path to keep grid strictly below horizon -->
+    <clipPath id="horizonCutoff">
+      <rect x="0" y="108" width="1200" height="200" />
     </clipPath>
     
     <!-- We define the straight V-lines once, originating from vanishing point 600,100 -->
@@ -177,21 +160,40 @@
   <line x1="0" y1="108" x2="1200" y2="108" stroke="#45dccc" stroke-width="3" filter="drop-shadow(0 0 10px #45dccc)"/>
   <line x1="0" y1="108" x2="1200" y2="108" stroke="#ffffff" stroke-width="1" opacity="0.8"/>
 
-  <!-- Typing Effect Text AND Cursors -->
+  <!-- Typing Effect Text AND Cursors using SMIL Native SVG Animations -->
+  <!-- We toggle visibility entirely, and animate translation of the caret across time without relying on buggy CSS SVG rendering engines -->
+  
   <g class="type-container" transform="translate(0, 130)">
-    
     <!-- Phrase 1: "Hi, I'm Sabarish" -->
-    <text class="text-1" x="430" y="0">Hi, I&apos;m Sabarish</text>
-    <line class="caret-1" x1="432" y1="-28" x2="432" y2="6"/>
+    <g visibility="hidden">
+      <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="4.65s" repeatCount="indefinite" repeatDur="15s"/>
+      <text x="430" y="0" clip-path="url(#typeClip1)">Hi, I&apos;m Sabarish</text>
+      <rect class="caret" x="432" y="-28" width="16" height="34">
+        <!-- Translate caret right to match the text width -->
+        <!-- Start idle, then at 0.75s slide to 310, idle until 3.75s, slide back 0 -->
+        <animate attributeName="x" values="432; 432; 742; 742; 432; 432" keyTimes="0; 0.05; 0.15; 0.25; 0.3; 1" dur="15s" repeatCount="indefinite" calcMode="discrete"/>
+      </rect>
+    </g>
     
     <!-- Phrase 2: "I'm a Developer" -->
-    <text class="text-2" x="460" y="0">I&apos;m a Developer</text>
-    <line class="caret-2" x1="462" y1="-28" x2="462" y2="6"/>
+    <g visibility="hidden">
+      <set attributeName="visibility" attributeType="CSS" to="visible" begin="5s" dur="4.65s" repeatCount="indefinite" fill="remove"/>
+      <!-- Oh wait, begin offsets in loops require SMIL tricks. Let's animate visibility string on a 15s loop -->
+      <animate attributeName="visibility" values="hidden; hidden; visible; visible; hidden" keyTimes="0; 0.33; 0.34; 0.64; 1" dur="15s" repeatCount="indefinite"/>
+      <text x="440" y="0" clip-path="url(#typeClip2)">I&apos;m a Developer</text>
+      <rect class="caret" x="442" y="-28" width="16" height="34">
+        <animate attributeName="x" values="442; 442; 732; 732; 442; 442" keyTimes="0; 0.38; 0.48; 0.58; 0.63; 1" dur="15s" repeatCount="indefinite" calcMode="discrete"/>
+      </rect>
+    </g>
     
     <!-- Phrase 3: "my main work creating imaginary to reality" -->
-    <text class="text-3" x="200" y="0">my main work creating imaginary to reality</text>
-    <line class="caret-3" x1="202" y1="-28" x2="202" y2="6"/>
-    
+    <g visibility="hidden">
+      <animate attributeName="visibility" values="hidden; hidden; visible; visible; hidden" keyTimes="0; 0.66; 0.67; 0.97; 1" dur="15s" repeatCount="indefinite"/>
+      <text x="180" y="0" clip-path="url(#typeClip3)">my main work creating imaginary to reality</text>
+      <rect class="caret" x="182" y="-28" width="16" height="34">
+        <animate attributeName="x" values="182; 182; 962; 962; 182; 182" keyTimes="0; 0.71; 0.81; 0.91; 0.96; 1" dur="15s" repeatCount="indefinite" calcMode="discrete"/>
+      </rect>
+    </g>
   </g>
   
   <!-- Corner Tech accents -->
@@ -201,12 +203,4 @@
     <polyline points="1200,270 1200,300 1170,300"/>
     <polyline points="30,300 0,300 0,270"/>
   </g>
-
-  <!-- Clip path to keep grid strictly below horizon -->
-  <defs>
-    <clipPath id="horizonCutoff">
-      <rect x="0" y="108" width="1200" height="200" />
-    </clipPath>
-  </defs>
-
 </svg>
