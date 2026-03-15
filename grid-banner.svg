@@ -52,7 +52,7 @@
         font-size: 32px;
         font-weight: bold;
         fill: #45dccc;
-        text-shadow: 0 0 10px #45dccc, 0 0 20px #45dccc;
+        filter: drop-shadow(0 0 5px #45dccc);
       }
 
       /* Each sentence has a fixed width div equivalent in SVG using a rect clip-path later,
@@ -166,11 +166,11 @@
   <g class="type-container" transform="translate(0, 130)">
     
     <!-- Phrase 1: "Hi, I'm Sabarish" -->
-    <text class="text-1" x="430" y="0">Hi, I'm Sabarish</text>
+    <text class="text-1" x="430" y="0">Hi, I&apos;m Sabarish</text>
     <line class="caret-1" x1="432" y1="-28" x2="432" y2="6"/>
     
     <!-- Phrase 2: "I'm a Developer" -->
-    <text class="text-2" x="460" y="0">I'm a Developer</text>
+    <text class="text-2" x="460" y="0">I&apos;m a Developer</text>
     <line class="caret-2" x1="462" y1="-28" x2="462" y2="6"/>
     
     <!-- Phrase 3: "my main work creating imaginary to reality" -->
