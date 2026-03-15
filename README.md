@@ -1,4 +1,4 @@
-<img src="grid-banner.svg?v=5" width="100%" alt="banner"/>
+<img src="https://raw.githubusercontent.com/sabarishmettu/sabarishmettu/main/grid-banner.svg?commit=d88ee64dcae701edb8279336cdb96a4765fee71f" width="100%" alt="banner"/>
 
 <div align="center">
   <picture>
