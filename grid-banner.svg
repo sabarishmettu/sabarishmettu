@@ -104,7 +104,10 @@
   <circle cx="1160" cy="290" r="2" fill="#45dccc" opacity="0.5"/>
 
   <!-- Title -->
-  <text class="title-text" x="600" y="150" text-anchor="middle" font-family="'Courier New', monospace" font-size="46" font-weight="bold" fill="#45dccc" letter-spacing="10">
-    SABARISH METTU
+  <text class="title-text" x="600" y="135" text-anchor="middle" font-family="'Courier New', monospace" font-size="34" font-weight="bold" fill="#45dccc" letter-spacing="6">
+    Sabarish Github profile DEVELOPER
+  </text>
+  <text x="600" y="170" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#45dccc" opacity="0.6" letter-spacing="3">
+    main work creating imaginary to reality
   </text>
 </svg>
