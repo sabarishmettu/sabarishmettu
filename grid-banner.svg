@@ -170,332 +170,329 @@
   <!-- Glow effect overlay -->
   <g class="grid-lines" opacity="0.3" filter="drop-shadow(0 0 4px #45dccc)" clip-path="url(#horizonCutoff)">
     <use href="#horizontalDepths" />
-  </g>
-  
-  <line x1="0" y1="108" x2="1200" y2="108" stroke="#ffffff" stroke-width="1" opacity="0.8"/>
-
-  <!-- Typing Effect Text AND Cursors -->
-  <g class="type-container" transform="translate(600, 130)" text-anchor="middle">
+    <!-- Phrase 1: "Hi, I'm Sabarish" -->
     <!-- Phrase 1: "Hi, I'm Sabarish" -->
     <g>
-      <text x="-160.0" y="0" text-anchor="start">
+      <text x="-163.2" y="0" text-anchor="start" xml:space="preserve">
         <tspan fill="#45dccc" opacity="0">
           <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
           H
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0044; 0.0054; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0043; 0.0053; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
           i
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0098; 0.0108; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0097; 0.0107; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
           ,
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0152; 0.0163; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0150; 0.0160; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
            
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0207; 0.0217; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0203; 0.0213; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
           I
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0261; 0.0271; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0257; 0.0267; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
           &apos;
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0315; 0.0325; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0310; 0.0320; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
           m
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0369; 0.0379; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0363; 0.0373; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
            
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0423; 0.0433; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0417; 0.0427; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
           S
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0478; 0.0488; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0470; 0.0480; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
           a
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0532; 0.0542; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0523; 0.0533; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
           b
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0586; 0.0596; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0577; 0.0587; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
           a
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0640; 0.0650; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0630; 0.0640; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
           r
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0694; 0.0704; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0683; 0.0693; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
           i
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0748; 0.0758; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0737; 0.0747; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
           s
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0803; 0.0813; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0790; 0.0800; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
           h
         </tspan>
       </text>
       <rect class="caret" y="-30" width="16" height="38" fill="#45dccc">
         <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
-        <animate attributeName="x" values="-160.0; -160.0; -140.0; -140.0; -120.0; -120.0; -100.0; -100.0; -80.0; -80.0; -60.0; -60.0; -40.0; -40.0; -20.0; -20.0; 0.0; 0.0; 20.0; 20.0; 40.0; 40.0; 60.0; 60.0; 80.0; 80.0; 100.0; 100.0; 120.0; 120.0; 140.0; 140.0; 160.0; 160.0; -160.0" keyTimes="0.0000; 0.0044; 0.0054; 0.0098; 0.0108; 0.0152; 0.0163; 0.0207; 0.0217; 0.0261; 0.0271; 0.0315; 0.0325; 0.0369; 0.0379; 0.0423; 0.0433; 0.0478; 0.0488; 0.0532; 0.0542; 0.0586; 0.0596; 0.0640; 0.0650; 0.0694; 0.0704; 0.0748; 0.0758; 0.0803; 0.0813; 0.0857; 0.0867; 0.3090; 1" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+        <animate attributeName="x" values="-163.2; -163.2; -142.79999999999998; -142.79999999999998; -122.39999999999999; -122.39999999999999; -102.0; -102.0; -81.6; -81.6; -61.19999999999999; -61.19999999999999; -40.8; -40.8; -20.400000000000006; -20.400000000000006; 0.0; 0.0; 20.400000000000006; 20.400000000000006; 40.80000000000001; 40.80000000000001; 61.19999999999999; 61.19999999999999; 81.6; 81.6; 102.0; 102.0; 122.39999999999998; 122.39999999999998; 142.8; 142.8; 163.2; 163.2; -163.2" keyTimes="0.0000; 0.0043; 0.0053; 0.0097; 0.0107; 0.0150; 0.0160; 0.0203; 0.0213; 0.0257; 0.0267; 0.0310; 0.0320; 0.0363; 0.0373; 0.0417; 0.0427; 0.0470; 0.0480; 0.0523; 0.0533; 0.0577; 0.0587; 0.0630; 0.0640; 0.0683; 0.0693; 0.0737; 0.0747; 0.0790; 0.0800; 0.0843; 0.0853; 0.3090; 1" dur="15s" repeatCount="indefinite" calcMode="linear"/>
       </rect>
     </g>
     <!-- Phrase 2: "I'm a Developer" -->
     <g>
-      <text x="-150.0" y="0" text-anchor="start">
+      <text x="-153.0" y="0" text-anchor="start" xml:space="preserve">
         <tspan fill="#45dccc" opacity="0">
           <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3323; 0.3333; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
           I
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3381; 0.3391; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3377; 0.3387; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
           &apos;
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3439; 0.3449; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3430; 0.3440; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
           m
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3497; 0.3507; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3483; 0.3493; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
            
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3554; 0.3564; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3537; 0.3547; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
           a
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3612; 0.3622; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3590; 0.3600; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
            
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3670; 0.3680; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3643; 0.3653; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
           D
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3728; 0.3738; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3697; 0.3707; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
           e
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3786; 0.3796; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3750; 0.3760; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
           v
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3843; 0.3853; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3803; 0.3813; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
           e
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3901; 0.3911; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3857; 0.3867; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
           l
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3959; 0.3969; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3910; 0.3920; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
           o
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.4017; 0.4027; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3963; 0.3973; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
           p
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.4074; 0.4084; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.4017; 0.4027; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
           e
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.4132; 0.4142; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.4070; 0.4080; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
           r
         </tspan>
       </text>
       <rect class="caret" y="-30" width="16" height="38" fill="#45dccc">
         <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3323; 0.3333; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
-        <animate attributeName="x" values="-150.0; -150.0; -150.0; -130.0; -130.0; -110.0; -110.0; -90.0; -90.0; -70.0; -70.0; -50.0; -50.0; -30.0; -30.0; -10.0; -10.0; 10.0; 10.0; 30.0; 30.0; 50.0; 50.0; 70.0; 70.0; 90.0; 90.0; 110.0; 110.0; 130.0; 130.0; 150.0; 150.0; -150.0" keyTimes="0; 0.3333; 0.3381; 0.3391; 0.3439; 0.3449; 0.3497; 0.3507; 0.3554; 0.3564; 0.3612; 0.3622; 0.3670; 0.3680; 0.3728; 0.3738; 0.3786; 0.3796; 0.3843; 0.3853; 0.3901; 0.3911; 0.3959; 0.3969; 0.4017; 0.4027; 0.4074; 0.4084; 0.4132; 0.4142; 0.4190; 0.4200; 0.6423; 1" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+        <animate attributeName="x" values="-153.0; -153.0; -153.0; -132.6; -132.6; -112.2; -112.2; -91.80000000000001; -91.80000000000001; -71.4; -71.4; -51.0; -51.0; -30.60000000000001; -30.60000000000001; -10.200000000000017; -10.200000000000017; 10.199999999999989; 10.199999999999989; 30.599999999999994; 30.599999999999994; 51.0; 51.0; 71.39999999999998; 71.39999999999998; 91.79999999999998; 91.79999999999998; 112.19999999999999; 112.19999999999999; 132.59999999999997; 132.59999999999997; 153.0; 153.0; -153.0" keyTimes="0; 0.3333; 0.3377; 0.3387; 0.3430; 0.3440; 0.3483; 0.3493; 0.3537; 0.3547; 0.3590; 0.3600; 0.3643; 0.3653; 0.3697; 0.3707; 0.3750; 0.3760; 0.3803; 0.3813; 0.3857; 0.3867; 0.3910; 0.3920; 0.3963; 0.3973; 0.4017; 0.4027; 0.4070; 0.4080; 0.4123; 0.4133; 0.6423; 1" dur="15s" repeatCount="indefinite" calcMode="linear"/>
       </rect>
     </g>
     <!-- Phrase 3: "my main work creating imaginary to reality" -->
     <g>
-      <text x="-420.0" y="0" text-anchor="start">
+      <text x="-428.4" y="0" text-anchor="start" xml:space="preserve">
         <tspan fill="#45dccc" opacity="0">
           <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6657; 0.6667; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           m
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6677; 0.6687; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6710; 0.6720; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           y
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6698; 0.6708; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6763; 0.6773; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
            
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6719; 0.6729; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6817; 0.6827; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           m
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6739; 0.6749; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6870; 0.6880; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           a
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6760; 0.6770; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6923; 0.6933; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           i
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6780; 0.6790; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6977; 0.6987; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           n
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6801; 0.6811; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7030; 0.7040; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
            
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6822; 0.6832; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7083; 0.7093; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           w
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6842; 0.6852; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7137; 0.7147; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           o
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6863; 0.6873; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7190; 0.7200; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           r
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6884; 0.6894; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7243; 0.7253; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           k
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6904; 0.6914; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7297; 0.7307; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
            
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6925; 0.6935; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7350; 0.7360; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           c
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6946; 0.6956; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7403; 0.7413; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           r
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6966; 0.6976; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7457; 0.7467; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           e
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6987; 0.6997; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7510; 0.7520; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           a
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7007; 0.7017; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7563; 0.7573; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           t
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7028; 0.7038; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7617; 0.7627; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           i
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7049; 0.7059; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7670; 0.7680; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           n
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7069; 0.7079; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7723; 0.7733; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           g
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7090; 0.7100; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7777; 0.7787; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
            
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7111; 0.7121; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7830; 0.7840; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           i
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7131; 0.7141; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7883; 0.7893; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           m
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7152; 0.7162; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7937; 0.7947; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           a
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7173; 0.7183; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7990; 0.8000; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           g
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7193; 0.7203; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8043; 0.8053; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           i
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7214; 0.7224; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8097; 0.8107; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           n
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7234; 0.7244; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8150; 0.8160; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           a
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7255; 0.7265; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8203; 0.8213; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           r
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7276; 0.7286; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8257; 0.8267; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           y
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7296; 0.7306; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8310; 0.8320; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
            
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7317; 0.7327; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8363; 0.8373; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           t
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7338; 0.7348; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8417; 0.8427; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           o
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7358; 0.7368; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8470; 0.8480; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
            
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7379; 0.7389; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8523; 0.8533; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           r
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7400; 0.7410; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8577; 0.8587; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           e
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7420; 0.7430; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8630; 0.8640; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           a
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7441; 0.7451; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8683; 0.8693; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           l
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7461; 0.7471; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8737; 0.8747; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           i
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7482; 0.7492; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8790; 0.8800; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           t
         </tspan>
         <tspan fill="#45dccc" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7503; 0.7513; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8843; 0.8853; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
           y
         </tspan>
       </text>
       <rect class="caret" y="-30" width="16" height="38" fill="#45dccc">
         <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6657; 0.6667; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="-428.4; -428.4; -428.4; -408.0; -408.0; -387.59999999999997; -387.59999999999997; -367.2; -367.2; -346.79999999999995; -346.79999999999995; -326.4; -326.4; -306.0; -306.0; -285.6; -285.6; -265.2; -265.2; -244.79999999999998; -244.79999999999998; -224.39999999999998; -224.39999999999998; -204.0; -204.0; -183.6; -183.6; -163.2; -163.2; -142.8; -142.8; -122.39999999999998; -122.39999999999998; -102.0; -102.0; -81.60000000000002; -81.60000000000002; -61.19999999999999; -61.19999999999999; -40.80000000000001; -40.80000000000001; -20.399999999999977; -20.399999999999977; 0.0; 0.0; 20.399999999999977; 20.399999999999977; 40.80000000000001; 40.80000000000001; 61.19999999999999; 61.19999999999999; 81.59999999999997; 81.59999999999997; 102.0; 102.0; 122.39999999999998; 122.39999999999998; 142.79999999999995; 142.79999999999995; 163.19999999999993; 163.19999999999993; 183.60000000000002; 183.60000000000002; 204.0; 204.0; 224.39999999999998; 224.39999999999998; 244.79999999999995; 244.79999999999995; 265.19999999999993; 265.19999999999993; 285.6; 285.6; 306.0; 306.0; 326.4; 326.4; 346.79999999999995; 346.79999999999995; 367.19999999999993; 367.19999999999993; 387.6; 387.6; 408.0; 408.0; 428.4; 428.4; -428.4" keyTimes="0; 0.6667; 0.6710; 0.6720; 0.6763; 0.6773; 0.6817; 0.6827; 0.6870; 0.6880; 0.6923; 0.6933; 0.6977; 0.6987; 0.7030; 0.7040; 0.7083; 0.7093; 0.7137; 0.7147; 0.7190; 0.7200; 0.7243; 0.7253; 0.7297; 0.7307; 0.7350; 0.7360; 0.7403; 0.7413; 0.7457; 0.7467; 0.7510; 0.7520; 0.7563; 0.7573; 0.7617; 0.7627; 0.7670; 0.7680; 0.7723; 0.7733; 0.7777; 0.7787; 0.7830; 0.7840; 0.7883; 0.7893; 0.7937; 0.7947; 0.7990; 0.8000; 0.8043; 0.8053; 0.8097; 0.8107; 0.8150; 0.8160; 0.8203; 0.8213; 0.8257; 0.8267; 0.8310; 0.8320; 0.8363; 0.8373; 0.8417; 0.8427; 0.8470; 0.8480; 0.8523; 0.8533; 0.8577; 0.8587; 0.8630; 0.8640; 0.8683; 0.8693; 0.8737; 0.8747; 0.8790; 0.8800; 0.8843; 0.8853; 0.8897; 0.8907; 0.9757; 1" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </g>
         <animate attributeName="x" values="-420.0; -420.0; -420.0; -400.0; -400.0; -380.0; -380.0; -360.0; -360.0; -340.0; -340.0; -320.0; -320.0; -300.0; -300.0; -280.0; -280.0; -260.0; -260.0; -240.0; -240.0; -220.0; -220.0; -200.0; -200.0; -180.0; -180.0; -160.0; -160.0; -140.0; -140.0; -120.0; -120.0; -100.0; -100.0; -80.0; -80.0; -60.0; -60.0; -40.0; -40.0; -20.0; -20.0; 0.0; 0.0; 20.0; 20.0; 40.0; 40.0; 60.0; 60.0; 80.0; 80.0; 100.0; 100.0; 120.0; 120.0; 140.0; 140.0; 160.0; 160.0; 180.0; 180.0; 200.0; 200.0; 220.0; 220.0; 240.0; 240.0; 260.0; 260.0; 280.0; 280.0; 300.0; 300.0; 320.0; 320.0; 340.0; 340.0; 360.0; 360.0; 380.0; 380.0; 400.0; 400.0; 420.0; 420.0; -420.0" keyTimes="0; 0.6667; 0.6677; 0.6687; 0.6698; 0.6708; 0.6719; 0.6729; 0.6739; 0.6749; 0.6760; 0.6770; 0.6780; 0.6790; 0.6801; 0.6811; 0.6822; 0.6832; 0.6842; 0.6852; 0.6863; 0.6873; 0.6884; 0.6894; 0.6904; 0.6914; 0.6925; 0.6935; 0.6946; 0.6956; 0.6966; 0.6976; 0.6987; 0.6997; 0.7007; 0.7017; 0.7028; 0.7038; 0.7049; 0.7059; 0.7069; 0.7079; 0.7090; 0.7100; 0.7111; 0.7121; 0.7131; 0.7141; 0.7152; 0.7162; 0.7173; 0.7183; 0.7193; 0.7203; 0.7214; 0.7224; 0.7234; 0.7244; 0.7255; 0.7265; 0.7276; 0.7286; 0.7296; 0.7306; 0.7317; 0.7327; 0.7338; 0.7348; 0.7358; 0.7368; 0.7379; 0.7389; 0.7400; 0.7410; 0.7420; 0.7430; 0.7441; 0.7451; 0.7461; 0.7471; 0.7482; 0.7492; 0.7503; 0.7513; 0.7523; 0.7533; 0.9757; 1" dur="15s" repeatCount="indefinite" calcMode="linear"/>
       </rect>
     </g>
-  </g>
   <!-- Corner Tech accents -->
   <g stroke="#45dccc" stroke-width="2" fill="none" opacity="0.7">
     <polyline points="0,30 0,0 30,0"/>
