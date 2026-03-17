@@ -170,6 +170,8 @@
   <!-- Glow effect overlay -->
   <g class="grid-lines" opacity="0.3" filter="drop-shadow(0 0 4px #45dccc)" clip-path="url(#horizonCutoff)">
     <use href="#horizontalDepths" />
+  </g>
+  <g clip-path="url(#horizonCutoff)">
     <!-- Phrase 1: "Hi, I'm Sabarish" -->
     <g class="type-container" transform="translate(600, 150)">
       <text x="-163.2" y="0" text-anchor="start" xml:space="preserve">
