@@ -171,7 +171,7 @@
   <g class="grid-lines" opacity="0.3" filter="drop-shadow(0 0 4px #45dccc)" clip-path="url(#horizonCutoff)">
     <use href="#horizontalDepths" />
     <!-- Phrase 1: "Hi, I'm Sabarish" -->
-    <g transform="translate(600, 150)">
+    <g class="type-container" transform="translate(600, 150)">
       <text x="-163.2" y="0" text-anchor="start" xml:space="preserve">
         <tspan fill="#45dccc" opacity="0">
           <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
@@ -244,7 +244,7 @@
       </rect>
     </g>
     <!-- Phrase 2: "I'm a Developer" -->
-    <g transform="translate(600, 150)">
+    <g class="type-container" transform="translate(600, 150)">
       <text x="-153.0" y="0" text-anchor="start" xml:space="preserve">
         <tspan fill="#45dccc" opacity="0">
           <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3323; 0.3333; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
@@ -313,7 +313,7 @@
       </rect>
     </g>
     <!-- Phrase 3: "my main work creating imaginary to reality" -->
-    <g transform="translate(600, 150)">
+    <g class="type-container" transform="translate(600, 150)">
       <text x="-428.4" y="0" text-anchor="start" xml:space="preserve">
         <tspan fill="#45dccc" opacity="0">
           <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6657; 0.6667; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
