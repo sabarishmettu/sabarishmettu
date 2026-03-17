@@ -171,7 +171,7 @@
   <g class="grid-lines" opacity="0.3" filter="drop-shadow(0 0 4px #45dccc)" clip-path="url(#horizonCutoff)">
     <use href="#horizontalDepths" />
     <!-- Phrase 1: "Hi, I'm Sabarish" -->
-    <g>
+    <g transform="translate(600, 150)">
       <text x="-163.2" y="0" text-anchor="start" xml:space="preserve">
         <tspan fill="#45dccc" opacity="0">
           <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.3100; 0.3110; 1" dur="15s" repeatCount="indefinite"/>
@@ -244,7 +244,7 @@
       </rect>
     </g>
     <!-- Phrase 2: "I'm a Developer" -->
-    <g>
+    <g transform="translate(600, 150)">
       <text x="-153.0" y="0" text-anchor="start" xml:space="preserve">
         <tspan fill="#45dccc" opacity="0">
           <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3323; 0.3333; 0.6433; 0.6443; 1" dur="15s" repeatCount="indefinite"/>
@@ -313,7 +313,7 @@
       </rect>
     </g>
     <!-- Phrase 3: "my main work creating imaginary to reality" -->
-    <g>
+    <g transform="translate(600, 150)">
       <text x="-428.4" y="0" text-anchor="start" xml:space="preserve">
         <tspan fill="#45dccc" opacity="0">
           <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6657; 0.6667; 0.9767; 0.9777; 1" dur="15s" repeatCount="indefinite"/>
@@ -489,6 +489,7 @@
         <animate attributeName="x" values="-428.4; -428.4; -428.4; -408.0; -408.0; -387.6; -387.6; -367.2; -367.2; -346.8; -346.8; -326.4; -326.4; -306.0; -306.0; -285.6; -285.6; -265.2; -265.2; -244.8; -244.8; -224.4; -224.4; -204.0; -204.0; -183.6; -183.6; -163.2; -163.2; -142.8; -142.8; -122.4; -122.4; -102.0; -102.0; -81.6; -81.6; -61.2; -61.2; -40.8; -40.8; -20.4; -20.4; 0.0; 0.0; 20.4; 20.4; 40.8; 40.8; 61.2; 61.2; 81.6; 81.6; 102.0; 102.0; 122.4; 122.4; 142.8; 142.8; 163.2; 163.2; 183.6; 183.6; 204.0; 204.0; 224.4; 224.4; 244.8; 244.8; 265.2; 265.2; 285.6; 285.6; 306.0; 306.0; 326.4; 326.4; 346.8; 346.8; 367.2; 367.2; 387.6; 387.6; 408.0; 408.0; 428.4; 428.4; -428.4" keyTimes="0; 0.6667; 0.6710; 0.6720; 0.6763; 0.6773; 0.6817; 0.6827; 0.6870; 0.6880; 0.6923; 0.6933; 0.6977; 0.6987; 0.7030; 0.7040; 0.7083; 0.7093; 0.7137; 0.7147; 0.7190; 0.7200; 0.7243; 0.7253; 0.7297; 0.7307; 0.7350; 0.7360; 0.7403; 0.7413; 0.7457; 0.7467; 0.7510; 0.7520; 0.7563; 0.7573; 0.7617; 0.7627; 0.7670; 0.7680; 0.7723; 0.7733; 0.7777; 0.7787; 0.7830; 0.7840; 0.7883; 0.7893; 0.7937; 0.7947; 0.7990; 0.8000; 0.8043; 0.8053; 0.8097; 0.8107; 0.8150; 0.8160; 0.8203; 0.8213; 0.8257; 0.8267; 0.8310; 0.8320; 0.8363; 0.8373; 0.8417; 0.8427; 0.8470; 0.8480; 0.8523; 0.8533; 0.8577; 0.8587; 0.8630; 0.8640; 0.8683; 0.8693; 0.8737; 0.8747; 0.8790; 0.8800; 0.8843; 0.8853; 0.8897; 0.8907; 0.9757; 1" dur="15s" repeatCount="indefinite" calcMode="linear"/>
       </rect>
     </g>
+  </g>
   <!-- Corner Tech accents -->
   <g stroke="#45dccc" stroke-width="2" fill="none" opacity="0.7">
     <polyline points="0,30 0,0 30,0"/>
