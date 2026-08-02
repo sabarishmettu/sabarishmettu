@@ -4,32 +4,27 @@
 
 ## 🧑‍💻 About Me
 
-<table align="center" style="border: none; border-collapse: collapse;">
-  <tr style="border: none;">
-    <td width="65%" valign="top" style="border: none;">
-      <img src="about-me.svg" width="100%" alt="Terminal About Me"/>
-    </td>
-    <td width="35%" align="center" valign="middle" style="border: none;">
-      <img src="Sabarish Pixal Avatar.gif" width="230" alt="Sabarish Pixel Avatar"/>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="about-me.svg" width="63%" align="left" alt="Terminal About Me"/>
+  <img src="Sabarish Pixal Avatar.gif" width="33%" align="right" alt="Sabarish Pixel Avatar"/>
+</p>
 
+<br clear="all"/>
 <br/><br/>
 
-<table align="center" style="border: none; border-collapse: collapse;">
-  <tr style="border: none;">
-    <td width="54%" valign="top" style="border: none;">
-      <img src="isocalendar-dark.svg" width="100%" alt="Isometric Contributions Calendar"/>
-    </td>
-    <td width="46%" valign="top" style="border: none;">
-      <img src="metrics.plugin.anilist.svg" width="100%" alt="AniList Anime & Manga Stats"/>
-      <br/><br/>
-      <img src="metrics.plugin.starlists.svg" width="100%" alt="Star Lists & Language Distribution"/>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="isocalendar-dark.svg" width="50%" align="left" alt="Isometric Contributions Calendar"/>
+  <img src="metrics.plugin.anilist.svg" width="48%" align="right" alt="AniList Anime & Manga Stats"/>
+</p>
 
+<br clear="all"/>
+<br/>
+
+<p align="right">
+  <img src="metrics.plugin.starlists.svg" width="48%" alt="Star Lists & Language Distribution"/>
+</p>
+
+<br clear="all"/>
 <br/><br/>
 
 <details>
@@ -48,6 +43,6 @@
 
 <br/><br/>
 
-<div align="center">
+<p align="center">
   <img src="github-octopuss (3).gif" width="55" alt="Octocat"/>
-</div>
+</p>
