@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 320" width="650" height="320">
+  <defs>
+    <style>
+      @keyframes typeLine1 { 0%, 4% { width: 0; } 12%, 100% { width: 365px; } }
+      @keyframes typeLine2 { 0%, 14% { width: 0; } 22%, 100% { width: 295px; } }
+      @keyframes typeLine3 { 0%, 24% { width: 0; } 32%, 100% { width: 310px; } }
+      @keyframes typeLine4 { 0%, 34% { width: 0; } 38%, 100% { width: 135px; } }
+      @keyframes typeLine5 { 0%, 40% { width: 0; } 52%, 100% { width: 430px; } }
+      @keyframes typeLine6 { 0%, 54% { width: 0; } 64%, 100% { width: 350px; } }
+      @keyframes typeLine7 { 0%, 66% { width: 0; } 74%, 100% { width: 210px; } }
+      @keyframes typeLine8 { 0%, 76% { width: 0; } 84%, 100% { width: 240px; } }
+      @keyframes typeLine9 { 0%, 86% { width: 0; } 98%, 100% { width: 450px; } }
+
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      @keyframes fadeIn1 { 0%, 4% { opacity: 0; } 5% { opacity: 1; } }
+      @keyframes fadeIn2 { 0%, 14% { opacity: 0; } 15% { opacity: 1; } }
+      @keyframes fadeIn3 { 0%, 24% { opacity: 0; } 25% { opacity: 1; } }
+      @keyframes fadeIn4 { 0%, 34% { opacity: 0; } 35% { opacity: 1; } }
+      @keyframes fadeIn5 { 0%, 40% { opacity: 0; } 41% { opacity: 1; } }
+      @keyframes fadeIn6 { 0%, 54% { opacity: 0; } 55% { opacity: 1; } }
+      @keyframes fadeIn7 { 0%, 66% { opacity: 0; } 67% { opacity: 1; } }
+      @keyframes fadeIn8 { 0%, 76% { opacity: 0; } 77% { opacity: 1; } }
+      @keyframes fadeIn9 { 0%, 86% { opacity: 0; } 87% { opacity: 1; } }
+
+      @keyframes cursorMove {
+        0%, 4%   { transform: translate(0px, 0px); }
+        12%, 14% { transform: translate(365px, 0px); }
+        22%, 24% { transform: translate(295px, 28px); }
+        32%, 34% { transform: translate(310px, 56px); }
+        38%, 40% { transform: translate(135px, 84px); }
+        52%, 54% { transform: translate(430px, 112px); }
+        64%, 66% { transform: translate(350px, 140px); }
+        74%, 76% { transform: translate(210px, 168px); }
+        84%, 86% { transform: translate(240px, 196px); }
+        98%, 100% { transform: translate(450px, 224px); }
+      }
+
+      .terminal-bg { fill: #0d1117; rx: 10; ry: 10; }
+      .terminal-header { fill: #161b22; }
+      .terminal-dot-red { fill: #ff5f57; }
+      .terminal-dot-yellow { fill: #febc2e; }
+      .terminal-dot-green { fill: #28c840; }
+      .terminal-title { fill: #8b949e; font-family: 'Courier New', monospace; font-size: 12px; }
+
+      .code-text {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        fill: #45dccc;
+      }
+      .code-key { fill: #79c0ff; }
+      .code-value { fill: #45dccc; }
+      .code-string { fill: #a5d6ff; }
+      .code-bullet { fill: #f0883e; }
+      .code-comment { fill: #8b949e; }
+
+      .line-mask { fill: #0d1117; }
+
+      .l1 { animation: typeLine1 10s steps(30, end) infinite; }
+      .l2 { animation: typeLine2 10s steps(30, end) infinite; }
+      .l3 { animation: typeLine3 10s steps(30, end) infinite; }
+      .l4 { animation: typeLine4 10s steps(30, end) infinite; }
+      .l5 { animation: typeLine5 10s steps(30, end) infinite; }
+      .l6 { animation: typeLine6 10s steps(30, end) infinite; }
+      .l7 { animation: typeLine7 10s steps(30, end) infinite; }
+      .l8 { animation: typeLine8 10s steps(30, end) infinite; }
+      .l9 { animation: typeLine9 10s steps(30, end) infinite; }
+
+      .t1 { animation: fadeIn1 10s steps(1, end) infinite; opacity: 0; }
+      .t2 { animation: fadeIn2 10s steps(1, end) infinite; opacity: 0; }
+      .t3 { animation: fadeIn3 10s steps(1, end) infinite; opacity: 0; }
+      .t4 { animation: fadeIn4 10s steps(1, end) infinite; opacity: 0; }
+      .t5 { animation: fadeIn5 10s steps(1, end) infinite; opacity: 0; }
+      .t6 { animation: fadeIn6 10s steps(1, end) infinite; opacity: 0; }
+      .t7 { animation: fadeIn7 10s steps(1, end) infinite; opacity: 0; }
+      .t8 { animation: fadeIn8 10s steps(1, end) infinite; opacity: 0; }
+      .t9 { animation: fadeIn9 10s steps(1, end) infinite; opacity: 0; }
+
+      .cursor {
+        fill: #45dccc;
+        animation: blink 0.8s infinite, cursorMove 10s steps(1, end) infinite;
+      }
+
+      .scanline {
+        fill: url(#scanlineGrad);
+        animation: scanDown 4s ease-in-out infinite;
+      }
+      @keyframes scanDown {
+        0% { transform: translateY(-320px); }
+        100% { transform: translateY(320px); }
+      }
+    </style>
+    <linearGradient id="scanlineGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#45dccc" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#45dccc" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#45dccc" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="terminalClip">
+      <rect x="0" y="0" width="650" height="320" rx="10" ry="10"/>
+    </clipPath>
+  </defs>
+
+  <!-- Terminal window -->
+  <rect class="terminal-bg" x="0" y="0" width="650" height="320" rx="10" ry="10" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Terminal header bar -->
+  <rect class="terminal-header" x="1" y="1" width="648" height="32" rx="10" ry="10"/>
+  <rect class="terminal-header" x="1" y="20" width="648" height="13"/>
+  <line x1="1" y1="33" x2="649" y2="33" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Traffic lights -->
+  <circle class="terminal-dot-red" cx="20" cy="17" r="6"/>
+  <circle class="terminal-dot-yellow" cx="40" cy="17" r="6"/>
+  <circle class="terminal-dot-green" cx="60" cy="17" r="6"/>
+  
+  <!-- Terminal title -->
+  <text class="terminal-title" x="325" y="21" text-anchor="middle">sabarish@dev ~ /about-me</text>
+
+  <!-- Code content area -->
+  <g transform="translate(24, 55)" clip-path="url(#terminalClip)">
+    <!-- Line 1: name: Sabarish Mettu -->
+    <g class="t1">
+      <text class="code-text" y="0"><tspan class="code-key">name</tspan><tspan class="code-comment">:</tspan><tspan class="code-value"> Sabarish Mettu</tspan></text>
+    </g>
+    
+    <!-- Line 2: role: Developer & Creator -->
+    <g class="t2">
+      <text class="code-text" y="28"><tspan class="code-key">role</tspan><tspan class="code-comment">:</tspan><tspan class="code-value"> Developer &amp; Creator</tspan></text>
+    </g>
+    
+    <!-- Line 3: location: India (UTC +05:30) -->
+    <g class="t3">
+      <text class="code-text" y="56"><tspan class="code-key">location</tspan><tspan class="code-comment">:</tspan><tspan class="code-value"> India (UTC +05:30)</tspan></text>
+    </g>
+    
+    <!-- Line 4: interests: -->
+    <g class="t4">
+      <text class="code-text" y="84"><tspan class="code-key">interests</tspan><tspan class="code-comment">:</tspan></text>
+    </g>
+    
+    <!-- Line 5: - Building innovative tools & automations -->
+    <g class="t5">
+      <text class="code-text" y="112"><tspan class="code-bullet">  - </tspan><tspan class="code-string">Building innovative tools &amp; automations</tspan></text>
+    </g>
+    
+    <!-- Line 6: - Cybersecurity & steganography -->
+    <g class="t6">
+      <text class="code-text" y="140"><tspan class="code-bullet">  - </tspan><tspan class="code-string">Cybersecurity &amp; steganography</tspan></text>
+    </g>
+    
+    <!-- Line 7: - Game development -->
+    <g class="t7">
+      <text class="code-text" y="168"><tspan class="code-bullet">  - </tspan><tspan class="code-string">Game development</tspan></text>
+    </g>
+    
+    <!-- Line 8: - Web development -->
+    <g class="t8">
+      <text class="code-text" y="196"><tspan class="code-bullet">  - </tspan><tspan class="code-string">Web development</tspan></text>
+    </g>
+    
+    <!-- Line 9: motto: "Turning imagination into working code" -->
+    <g class="t9">
+      <text class="code-text" y="224"><tspan class="code-key">motto</tspan><tspan class="code-comment">:</tspan><tspan class="code-string"> "Turning imagination into working code"</tspan></text>
+    </g>
+
+    <!-- Blinking cursor -->
+    <rect class="cursor" x="0" y="-14" width="8" height="18" rx="1"/>
+  </g>
+
+  <!-- CRT scanline effect -->
+  <rect class="scanline" x="0" y="0" width="650" height="320" clip-path="url(#terminalClip)"/>
+</svg>
