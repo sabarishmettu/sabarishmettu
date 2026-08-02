@@ -2,17 +2,15 @@
 
 <br/>
 
-## 🥷 About Me
-
-#### LINE BY LINE TYPING Up Green System FOR THIS ABOUT ME TO APPLY
+## 🧑‍💻 About Me
 
 <table>
   <tr>
-    <td width="65%" valign="top">
+    <td width="65%" valign="top" style="border: none; background: transparent;">
       <img src="about-me.svg" width="100%" alt="Terminal About Me"/>
     </td>
-    <td width="35%" align="center" valign="middle">
-      <img src="Sabarish Pixal Avatar.gif" width="220" alt="Sabarish Pixel Avatar"/>
+    <td width="35%" align="center" valign="middle" style="border: none; background: transparent;">
+      <img src="Sabarish Pixal Avatar.gif" width="230" alt="Sabarish Pixel Avatar"/>
     </td>
   </tr>
 </table>
@@ -23,10 +21,10 @@
 
 <table border="0" width="100%">
   <tr>
-    <td width="55%" valign="top">
+    <td width="54%" valign="top" style="border: none;">
       <img src="isocalendar-dark.svg" width="100%" alt="Isometric Contributions Calendar"/>
     </td>
-    <td width="45%" valign="top">
+    <td width="46%" valign="top" style="border: none;">
       <img src="metrics.plugin.anilist.svg" width="100%" alt="AniList Anime & Manga Stats"/>
       <br/><br/>
       <img src="metrics.plugin.starlists.svg" width="100%" alt="Star Lists & Language Distribution"/>
@@ -38,16 +36,16 @@
 
 ---
 
-<details open>
-  <summary><b>📁 Featured repositories</b></summary>
+<details>
+  <summary><b>Featured repositories</b></summary>
   <br/>
   <img src="metrics.plugin.repositories.svg" width="100%" alt="Featured Repositories"/>
 </details>
 
 <br/>
 
-<details open>
-  <summary><b>⚖️ Permissions, limitations and conditions</b></summary>
+<details>
+  <summary><b>Permissions, limitations and conditions</b></summary>
   <br/>
   <img src="metrics.plugin.licenses.svg" width="100%" alt="Permissions, Limitations, Conditions & Licenses Overview"/>
 </details>
