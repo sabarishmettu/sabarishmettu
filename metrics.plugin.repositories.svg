@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 160" width="750" height="160">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; }
+      .header-title { fill: #45dccc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; font-weight: bold; }
+      .repo-title { fill: #58a6ff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; font-weight: bold; }
+      .repo-desc { fill: #8b949e; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10.5px; }
+      .repo-meta { fill: #c9d1d9; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10px; }
+      .box { fill: #161b22; stroke: #30363d; stroke-width: 1; rx: 6; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="750" height="160" rx="8"/>
+
+  <text class="header-title" x="16" y="24">📁 Featured repositories</text>
+
+  <!-- Repo 1 -->
+  <g transform="translate(16, 38)">
+    <rect class="box" width="350" height="105"/>
+    <text class="repo-title" x="14" y="24">Image-Steganography</text>
+    <text class="repo-desc" x="14" y="44">An image steganography project using Python to encode and</text>
+    <text class="repo-desc" x="14" y="58">decode secret data hidden inside image pixels.</text>
+    <circle cx="18" cy="84" r="5" fill="#3572A5"/>
+    <text class="repo-meta" x="28" y="87">Python  |  ⭐ 3  |  🍴 0</text>
+  </g>
+
+  <!-- Repo 2 -->
+  <g transform="translate(382, 38)">
+    <rect class="box" width="350" height="105"/>
+    <text class="repo-title" x="14" y="24">USB-RUBBER-DUCKY</text>
+    <text class="repo-desc" x="14" y="44">USB Rubber Ducky payloads, keystroke injection scripts,</text>
+    <text class="repo-desc" x="14" y="58">and hardware ducky automation tools.</text>
+    <circle cx="18" cy="84" r="5" fill="#f1e05a"/>
+    <text class="repo-meta" x="28" y="87">Python / C++  |  ⭐ 1  |  🍴 0</text>
+  </g>
+</svg>
