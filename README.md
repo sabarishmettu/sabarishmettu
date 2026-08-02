@@ -1,26 +1,24 @@
 <img src="grid-banner-v2.svg" width="100%" alt="Sabarish Mettu Banner"/>
 
-<br/>
+<br/><br/>
 
 ## 🧑‍💻 About Me
 
-<table>
-  <tr>
-    <td width="65%" valign="top" style="border: none; background: transparent;">
+<table align="center" style="border: none; border-collapse: collapse;">
+  <tr style="border: none;">
+    <td width="65%" valign="top" style="border: none;">
       <img src="about-me.svg" width="100%" alt="Terminal About Me"/>
     </td>
-    <td width="35%" align="center" valign="middle" style="border: none; background: transparent;">
+    <td width="35%" align="center" valign="middle" style="border: none;">
       <img src="Sabarish Pixal Avatar.gif" width="230" alt="Sabarish Pixel Avatar"/>
     </td>
   </tr>
 </table>
 
-<br/>
+<br/><br/>
 
----
-
-<table border="0" width="100%">
-  <tr>
+<table align="center" style="border: none; border-collapse: collapse;">
+  <tr style="border: none;">
     <td width="54%" valign="top" style="border: none;">
       <img src="isocalendar-dark.svg" width="100%" alt="Isometric Contributions Calendar"/>
     </td>
@@ -32,9 +30,7 @@
   </tr>
 </table>
 
-<br/>
-
----
+<br/><br/>
 
 <details>
   <summary><b>Featured repositories</b></summary>
@@ -50,9 +46,7 @@
   <img src="metrics.plugin.licenses.svg" width="100%" alt="Permissions, Limitations, Conditions & Licenses Overview"/>
 </details>
 
-<br/>
-
----
+<br/><br/>
 
 <div align="center">
   <img src="github-octopuss (3).gif" width="55" alt="Octocat"/>
