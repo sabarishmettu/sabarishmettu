@@ -2,7 +2,9 @@
 
 <br/>
 
-## 👤 About Me
+## 🥷 About Me
+
+#### LINE BY LINE TYPING Up Green System FOR THIS ABOUT ME TO APPLY
 
 <table>
   <tr>
@@ -19,42 +21,68 @@
 
 ---
 
-<table border="0">
+<table border="0" width="100%">
   <tr>
-    <td width="50%" valign="top">
+    <td width="55%" valign="top">
 
-### 📊 Activity & Stats
+### 🗣️ Sabarish Mettu
+- 🕒 **Joined GitHub**: 5 years ago
+- 👥 **Followed by**: 5 users | **Contributed to**: 17 repositories
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=sabarishmettu&show_icons=true&theme=github_dark&border_color=45dccc&title_color=45dccc&icon_color=45dccc&text_color=c9d1d9&hide_border=false&count_private=true)](https://github.com/sabarishmettu)
+#### 📆 Contributions calendar
 
-[![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=sabarishmettu&theme=github-dark-blue&border=45dccc&stroke=45dccc&ring=45dccc&fire=45dccc&currStreakLabel=45dccc&sideLabels=c9d1d9&dates=8b949e)](https://github.com/sabarishmettu)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="isocalendar-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="isocalendar.svg"/>
+  <img src="isocalendar-dark.svg" width="100%" alt="Isometric Contributions Calendar"/>
+</picture>
 
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sabarishmettu&layout=compact&theme=github_dark&border_color=45dccc&title_color=45dccc&text_color=c9d1d9&hide_border=false&langs_count=8)](https://github.com/sabarishmettu)
+<br/>
+
+- ⚡ **Commits Streaks**: Current streak: 1 day | Best streak: 7 days
+- 📈 **Commits Per Day**: Highest in a day: 40 | Average per day: ~1.65
+
+<br/>
+
+#### 💬 23 Languages & Tech Stack
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
     </td>
-    <td width="50%" valign="top">
+    <td width="45%" valign="top">
 
-### 🎮 Interests & Favorites
+### 🍿 AniList
+- 🍿 **Favorites genres**: Action, Drama, Psychological, Sci-Fi, Adventure, Comedy
+- ⏱️ **19.4k** minutes watched | 📚 **5.91k** chapters read
 
-```yaml
-Anime & Tech:
-  - Cyberpunk & Sci-Fi Aesthetics
-  - Embedded Systems & Hardware Hacking
-  - Steganography & Network Security
-  - Python Automation & Microcontrollers
+#### 🎬 Favorites animes
+- **Serial Experiments Lain** (1998, 13 episodes)
+  > *We're all connected... There is the world around us, a world of people, tactile sensation, and culture.*
+- **Shin Seiki Evangelion** (1995, 26 episodes)
+  > *In the year 2015, the Angels, huge, tremendously powerful alien war machines appear in Tokyo for the second time.*
+
+#### 💖 Favorites characters
+| 👤 | 👤 | 👤 | 👤 | 👤 | 👤 | 👤 |
+|---|---|---|---|---|---|---|
+| 🤖 | 👾 | 💻 | 🕶️ | ⚡ | 🧠 | 🔮 |
+
+<br/>
+
+### 🌟 7 Star lists
+- 🌐 **Awesome Repositories** — *Thanks for contributing to human progress!*
+
 ```
-
-#### 🛠️ Tech Stack & Skills
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
-#### 🏆 GitHub Trophies
-![Trophies](https://github-profile-trophy.vercel.app/?username=sabarishmettu&theme=darkhub&no-frame=true&no-bg=true&column=3)
+TypeScript  28.57%  ████████░░░░  JavaScript  25.00%  ███████░░░░░
+C++         10.71%  ███░░░░░░░░░  C           10.71%  ███░░░░░░░░░
+Rust         3.57%  █░░░░░░░░░░░  CodeQL       3.57%  █░░░░░░░░░░░
+Ruby         3.57%  █░░░░░░░░░░░  Java         3.57%  █░░░░░░░░░░░
+```
 
     </td>
   </tr>
@@ -64,53 +92,55 @@ Anime & Tech:
 
 ---
 
-## 🚀 Projects & Details
+## 📑 Repositories & Conditions
 
 <details>
-  <summary><b>📁 Featured Repositories</b></summary>
+  <summary><b>📁 Featured repositories</b></summary>
   <br/>
-  <div align="center">
-    <a href="https://github.com/sabarishmettu/Image-Steganography">
-      <img src="https://github-readme-stats.vercel.app/api/pin/?username=sabarishmettu&repo=Image-Steganography&theme=github_dark&border_color=45dccc&title_color=45dccc&icon_color=45dccc" alt="Image-Steganography"/>
-    </a>
-    <a href="https://github.com/sabarishmettu/USB-RUBBER-DUCKY">
-      <img src="https://github-readme-stats.vercel.app/api/pin/?username=sabarishmettu&repo=USB-RUBBER-DUCKY&theme=github_dark&border_color=45dccc&title_color=45dccc&icon_color=45dccc" alt="USB-RUBBER-DUCKY"/>
-    </a>
-    <a href="https://github.com/sabarishmettu/Flappy-bird-game">
-      <img src="https://github-readme-stats.vercel.app/api/pin/?username=sabarishmettu&repo=Flappy-bird-game&theme=github_dark&border_color=45dccc&title_color=45dccc&icon_color=45dccc" alt="Flappy-bird-game"/>
-    </a>
-    <a href="https://github.com/sabarishmettu/AutoTyper">
-      <img src="https://github-readme-stats.vercel.app/api/pin/?username=sabarishmettu&repo=AutoTyper&theme=github_dark&border_color=45dccc&title_color=45dccc&icon_color=45dccc" alt="AutoTyper"/>
-    </a>
-  </div>
-</details>
+  
+  ### ▼ Featured Repositories
 
-<details>
-  <summary><b>⚙️ Permissions, Limitations and Conditions</b></summary>
-  <br/>
-
-  | Permissions | Limitations | Conditions |
-  | :--- | :--- | :--- |
-  | ✔ Commercial use | ✖ Liability | ℹ License and copyright notice |
-  | ✔ Modification | ✖ Warranty | ℹ State changes |
-  | ✔ Distribution | | |
-  | ✔ Private use | | |
+  - **[Image-Steganography](https://github.com/sabarishmettu/Image-Steganography)**: An image steganography project created with Python. Hide data inside image files easily.
+  - **[USB-RUBBER-DUCKY](https://github.com/sabarishmettu/USB-RUBBER-DUCKY)**: Collection of USB Rubber Ducky payload scripts and hardware utilities.
+  - **[Flappy-bird-game](https://github.com/sabarishmettu/Flappy-bird-game)**: Classic Flappy Bird game built in Python using Pygame.
+  - **[AutoTyper](https://github.com/sabarishmettu/AutoTyper)**: Python script for automated text typing and input automation.
+  - **[Digispark-mouse-mover](https://github.com/sabarishmettu/Digispark-mouse-mover)**: Mouse jiggler hardware payload for Digispark ATtiny85.
 
 </details>
 
 <details>
-  <summary><b>📜 Licenses Overview</b></summary>
+  <summary><b>⚖️ Permissions, limitations and conditions</b></summary>
   <br/>
 
-  - **MIT License**: Image-Steganography, Digispark-mouse-mover
-  - **Open Source**: Public repositories open for contributions and learning.
+  ### ▼ Permissions, limitations and conditions
+
+  | 📜 Licenses | 🔑 Permissions | ⚠️ Limitations | ℹ️ Conditions |
+  | :--- | :--- | :--- | :--- |
+  | **MIT License** (359 known licenses used) | ✔️ Commercial use | ❌ Liability | ℹ️ License and copyright notice |
+  | **479 dependencies** | ✔️ Modification | ❌ Warranty | ℹ️ State changes |
+  | | ✔️ Distribution | ❌ Trademark use | |
+  | | ✔️ Private use | ❌ Patent use | |
+
+</details>
+
+<details>
+  <summary><b>📊 Licenses overview</b></summary>
+  <br/>
+
+  ### ▼ Licenses overview
+
+  - 🟢 **MIT**: 321 repositories
+  - 🔵 **Apache-2.0**: 15 repositories
+  - 🟡 **BSD-2-Clause**: 15 repositories
+  - 🟠 **BSD-3-Clause**: 6 repositories
+  - 🟣 **CC0-1.0**: 1 repository
+  - ⚪ **Unlicense**: 1 repository
+  - ⚙️ **Other / Custom**: 43 repositories
 
 </details>
 
 <br/>
 
----
-
 <div align="center">
-  <img src="github-octopuss (3).gif" width="60" alt="Octocat"/>
+  <img src="github-octopuss (3).gif" width="55" alt="Octocat"/>
 </div>
