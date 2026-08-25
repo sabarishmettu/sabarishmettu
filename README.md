@@ -6,29 +6,19 @@
 
 ## 🧑‍💻 About Me
 
-<table border="0" width="100%">
-  <tr valign="middle">
-    <td width="65%" align="center">
-      <img src="about-me.svg" width="100%" alt="Terminal About Me"/>
-    </td>
-    <td width="35%" align="center">
-      <img src="Sabarish Pixal Avatar.gif" width="95%" alt="Sabarish Pixel Avatar"/>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="about-me.svg" width="62%" alt="Terminal About Me"/>
+  &nbsp;&nbsp;
+  <img src="Sabarish Pixal Avatar.gif" width="34%" alt="Sabarish Pixel Avatar"/>
+</p>
 
 <br/>
 
-<table border="0" width="100%">
-  <tr valign="top">
-    <td width="50%" align="center">
-      <img src="isocalendar-dark.svg" width="100%" alt="Isometric Contributions Calendar"/>
-    </td>
-    <td width="50%" align="center">
-      <img src="metrics.plugin.starlists.svg" width="100%" alt="Star Lists &amp; Language Distribution"/>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="isocalendar-dark.svg" width="48.5%" alt="Isometric Contributions Calendar"/>
+  &nbsp;
+  <img src="metrics.plugin.starlists.svg" width="48.5%" alt="Star Lists &amp; Language Distribution"/>
+</p>
 
 <br/>
 
