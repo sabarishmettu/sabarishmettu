@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="grid-banner-v2.svg" width="100%" alt="Sabarish Mettu Banner"/>
+  <img src="https://raw.githubusercontent.com/sabarishmettu/sabarishmettu/main/grid-banner-v2.svg" width="100%" alt="Sabarish Mettu Banner"/>
 </p>
 
 <br/>
