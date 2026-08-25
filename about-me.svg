@@ -10,13 +10,13 @@
       .terminal-dot-teal { fill: #2dd4bf; }
       .terminal-title {
         fill: #67e8f9;
-        font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
         font-size: 11.5px;
         opacity: 0.85;
       }
 
       .code-text {
-        font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
         font-size: 13.5px;
         letter-spacing: 0.2px;
       }
