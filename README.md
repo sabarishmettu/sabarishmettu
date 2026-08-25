@@ -1,23 +1,21 @@
-<img src="grid-banner-v2.svg" width="100%" alt="Sabarish Mettu Banner"/>
+<img src="grid-banner-v2.svg" width="100%" alt="Sabarish Mettu Banner"/><br/><br/>
 
-<br/><br/>
-
-## 🧑‍💻 About Me
+## 🧑💻 About Me
 
 <p align="center">
   <img src="about-me.svg" width="63%" align="left" alt="Terminal About Me"/>
   <img src="Sabarish Pixal Avatar.gif" width="33%" align="right" alt="Sabarish Pixel Avatar"/>
 </p>
-
 <br clear="all"/>
+
 <br/><br/>
 
 <p align="center">
   <img src="isocalendar-dark.svg" width="50%" align="left" alt="Isometric Contributions Calendar"/>
   <img src="metrics.plugin.starlists.svg" width="48%" align="right" alt="Star Lists & Language Distribution"/>
 </p>
-
 <br clear="all"/>
+
 <br/><br/>
 
 <details open>
@@ -99,24 +97,8 @@
 </p>
 
 <p align="left">
-  🌐 <b>Portfolio:</b> <a href="https://mettusabarish.vercel.app/">mettusabarish.vercel.app</a> &nbsp;|&nbsp; 📍 <b>Location:</b> Bengaluru, India &nbsp;|&nbsp; 📫 <b>Email:</b> <a href="mailto:mettusabarish96@gmail.com">mettusabarish96@gmail.com</a>
+  🌐 <b>Portfolio:</b> <a href="https://mettusabarish.vercel.app/">mettusabarish.vercel.app</a> &nbsp;|&nbsp; 📍 <b>Location:</b> Bengaluru, India &nbsp;|&nbsp; ✉️ <b>Email:</b> <a href="mailto:mettusabarish96@gmail.com">mettusabarish96@gmail.com</a>
 </p>
-
-<br/><br/>
-
-<details>
-  <summary><b>Featured Repositories Overview</b></summary>
-  <br/>
-  <img src="metrics.plugin.repositories.svg" width="100%" alt="Featured Repositories"/>
-</details>
-
-<br/>
-
-<details>
-  <summary><b>Permissions, limitations and conditions</b></summary>
-  <br/>
-  <img src="metrics.plugin.licenses.svg" width="100%" alt="Permissions, Limitations, Conditions & Licenses Overview"/>
-</details>
 
 <br/><br/>
 
