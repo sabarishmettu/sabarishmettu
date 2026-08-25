@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid slice" width="1200" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid slice" width="1200" height="300">
   <defs>
     <style>
       .bg { fill: #030d11; }
@@ -13,7 +13,6 @@
         stroke: #00f2fe;
         stroke-width: 1.8;
         opacity: 0.15;
-        filter: drop-shadow(0 0 4px #00f2fe);
       }
 
       /* --- HORIZON SCAN LINE --- */
@@ -45,7 +44,6 @@
         stroke-width: 2.8;
         stroke-dasharray: 100 1300;
         stroke-linecap: round;
-        filter: drop-shadow(0 0 8px #00f2fe);
       }
       .pulse--1 { animation: pulseTravel1 3.2s linear infinite; animation-delay: 0s; }
       .pulse--2 { animation: pulseTravel1 4.1s linear infinite; animation-delay: 1.2s; }
@@ -61,7 +59,6 @@
       }
       .particle {
         fill: #38efda;
-        filter: drop-shadow(0 0 3px #00f2fe);
       }
       .p1 { animation: floatParticle 3.5s ease-in-out infinite; }
       .p2 { animation: floatParticle 4.8s ease-in-out infinite 0.6s; }
@@ -82,7 +79,7 @@
       }
       @keyframes pulsePoly {
         0%, 100% { opacity: 0.25; stroke-width: 1.2; }
-        50% { opacity: 0.65; stroke-width: 1.8; filter: drop-shadow(0 0 8px #00f2fe); }
+        50% { opacity: 0.65; stroke-width: 1.8; }
       }
       .wire-poly {
         fill: none;
@@ -100,7 +97,6 @@
         font-weight: 700;
         letter-spacing: 0.5px;
         fill: #38efda;
-        filter: drop-shadow(0 0 6px rgba(0,242,254,0.9));
       }
 
       /* --- BLINKING TERMINAL CURSOR BLOCK --- */
@@ -110,7 +106,6 @@
       }
       .cursor-block {
         fill: #38efda;
-        filter: drop-shadow(0 0 8px #00f2fe);
         animation: blinkCursor 0.9s infinite;
       }
 
@@ -128,8 +123,8 @@
         opacity: 0.35;
       }
       @keyframes blinkDot {
-        0%, 100% { opacity: 1; filter: drop-shadow(0 0 4px #00f2fe); }
-        50% { opacity: 0.2; filter: none; }
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.2; }
       }
       .status-dot {
         fill: #38efda;
@@ -139,7 +134,7 @@
       .dot-3 { animation-delay: 0.8s; }
 
       .hud-text {
-        font-family: 'Fira Code', 'Courier New', monospace;
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, monospace;
         font-size: 11.5px;
         font-weight: 700;
         letter-spacing: 1.2px;
@@ -165,43 +160,6 @@
     <clipPath id="gridHorizonClip">
       <rect x="0" y="105" width="1200" height="195" />
     </clipPath>
-
-    <!-- 3D Perspective Rays radiating from Horizon Center (600, 105) -->
-    <g id="perspectiveRays">
-      <line x1="600" y1="105" x2="-650" y2="300" />
-      <line x1="600" y1="105" x2="-420" y2="300" />
-      <line x1="600" y1="105" x2="-210" y2="300" />
-      <line x1="600" y1="105" x2="-20"  y2="300" />
-      <line x1="600" y1="105" x2="140"  y2="300" />
-      <line x1="600" y1="105" x2="280"  y2="300" />
-      <line x1="600" y1="105" x2="400"  y2="300" />
-      <line x1="600" y1="105" x2="510"  y2="300" />
-      <line x1="600" y1="105" x2="600"  y2="300" />
-      <line x1="600" y1="105" x2="690"  y2="300" />
-      <line x1="600" y1="105" x2="800"  y2="300" />
-      <line x1="600" y1="105" x2="920"  y2="300" />
-      <line x1="600" y1="105" x2="1060" y2="300" />
-      <line x1="600" y1="105" x2="1220" y2="300" />
-      <line x1="600" y1="105" x2="1410" y2="300" />
-      <line x1="600" y1="105" x2="1620" y2="300" />
-      <line x1="600" y1="105" x2="1850" y2="300" />
-    </g>
-
-    <!-- Horizontal Depth Grid Lines (Exponential Perspective) -->
-    <g id="perspectiveDepths">
-      <line x1="0" y1="109" x2="1200" y2="109" />
-      <line x1="0" y1="113" x2="1200" y2="113" />
-      <line x1="0" y1="118" x2="1200" y2="118" />
-      <line x1="0" y1="124" x2="1200" y2="124" />
-      <line x1="0" y1="132" x2="1200" y2="132" />
-      <line x1="0" y1="142" x2="1200" y2="142" />
-      <line x1="0" y1="155" x2="1200" y2="155" />
-      <line x1="0" y1="171" x2="1200" y2="171" />
-      <line x1="0" y1="192" x2="1200" y2="192" />
-      <line x1="0" y1="219" x2="1200" y2="219" />
-      <line x1="0" y1="253" x2="1200" y2="253" />
-      <line x1="0" y1="295" x2="1200" y2="295" />
-    </g>
   </defs>
 
   <!-- Deep Cyber Dark Base Background -->
@@ -218,15 +176,48 @@
     <polygon class="wire-poly poly-3" points="600,58 630,74 630,110 600,126 570,110 570,74" />
   </g>
 
-  <!-- 3D Perspective Grid Field -->
+  <!-- 3D Perspective Grid Field (Inlined for 100% GitHub Camo compatibility) -->
   <g class="grid-lines" clip-path="url(#gridHorizonClip)">
-    <use href="#perspectiveRays" />
-    <use href="#perspectiveDepths" />
+    <line x1="600" y1="105" x2="-650" y2="300" />
+    <line x1="600" y1="105" x2="-420" y2="300" />
+    <line x1="600" y1="105" x2="-210" y2="300" />
+    <line x1="600" y1="105" x2="-20"  y2="300" />
+    <line x1="600" y1="105" x2="140"  y2="300" />
+    <line x1="600" y1="105" x2="280"  y2="300" />
+    <line x1="600" y1="105" x2="400"  y2="300" />
+    <line x1="600" y1="105" x2="510"  y2="300" />
+    <line x1="600" y1="105" x2="600"  y2="300" />
+    <line x1="600" y1="105" x2="690"  y2="300" />
+    <line x1="600" y1="105" x2="800"  y2="300" />
+    <line x1="600" y1="105" x2="920"  y2="300" />
+    <line x1="600" y1="105" x2="1060" y2="300" />
+    <line x1="600" y1="105" x2="1220" y2="300" />
+    <line x1="600" y1="105" x2="1410" y2="300" />
+    <line x1="600" y1="105" x2="1620" y2="300" />
+    <line x1="600" y1="105" x2="1850" y2="300" />
+
+    <line x1="0" y1="109" x2="1200" y2="109" />
+    <line x1="0" y1="113" x2="1200" y2="113" />
+    <line x1="0" y1="118" x2="1200" y2="118" />
+    <line x1="0" y1="124" x2="1200" y2="124" />
+    <line x1="0" y1="132" x2="1200" y2="132" />
+    <line x1="0" y1="142" x2="1200" y2="142" />
+    <line x1="0" y1="155" x2="1200" y2="155" />
+    <line x1="0" y1="171" x2="1200" y2="171" />
+    <line x1="0" y1="192" x2="1200" y2="192" />
+    <line x1="0" y1="219" x2="1200" y2="219" />
+    <line x1="0" y1="253" x2="1200" y2="253" />
+    <line x1="0" y1="295" x2="1200" y2="295" />
   </g>
 
   <!-- Grid Ambient Glow Overlay -->
   <g class="grid-glow" clip-path="url(#gridHorizonClip)">
-    <use href="#perspectiveDepths" />
+    <line x1="0" y1="109" x2="1200" y2="109" />
+    <line x1="0" y1="118" x2="1200" y2="118" />
+    <line x1="0" y1="132" x2="1200" y2="132" />
+    <line x1="0" y1="155" x2="1200" y2="155" />
+    <line x1="0" y1="192" x2="1200" y2="192" />
+    <line x1="0" y1="253" x2="1200" y2="253" />
   </g>
 
   <!-- Animated Horizon Scan Wave -->
@@ -254,18 +245,15 @@
   </g>
 
   <!-- Horizon Line with Neon Edge Glow -->
-  <line x1="0" y1="105" x2="1200" y2="105" stroke="#38efda" stroke-width="1.5" opacity="0.6" filter="drop-shadow(0 0 6px #00f2fe)"/>
+  <line x1="0" y1="105" x2="1200" y2="105" stroke="#38efda" stroke-width="1.5" opacity="0.6"/>
 
   <!-- =================================================================== -->
-  <!-- MAIN TYPED SLOGAN BANNER (From User Image): "Creating Imaginary to Reality █" -->
+  <!-- MAIN TYPED SLOGAN BANNER: "Creating Imaginary to Reality █" -->
   <!-- =================================================================== -->
   <g transform="translate(600, 154)">
-    <!-- Multi-phrase Dynamic Typing Container -->
-    <!-- Phrase 1: "Creating Imaginary to Reality" -->
     <g class="type-text">
       <text x="-315" y="0" text-anchor="start" xml:space="preserve"><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>C</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.012; 0.014; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>r</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.024; 0.026; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>e</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.036; 0.038; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>a</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.048; 0.050; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>t</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.060; 0.062; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>i</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.072; 0.074; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>n</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.084; 0.086; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>g</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.096; 0.098; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>&#160;</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.108; 0.110; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>I</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.120; 0.122; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>m</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.132; 0.134; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>a</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.144; 0.146; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>g</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.156; 0.158; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>i</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.168; 0.170; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>n</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.180; 0.182; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>a</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.192; 0.194; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>r</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.204; 0.206; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>y</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.216; 0.218; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>&#160;</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.228; 0.230; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>t</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.240; 0.242; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>o</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.252; 0.254; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>&#160;</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.264; 0.266; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>R</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.276; 0.278; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>e</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.288; 0.290; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>a</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.300; 0.302; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>l</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.312; 0.314; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>i</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.324; 0.326; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>t</tspan><tspan fill="#38efda" opacity="0"><animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.336; 0.338; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>y</tspan></text>
       
-      <!-- Cyan Solid Cursor Block tracking typing position -->
       <rect class="cursor-block" y="-28" width="16" height="36">
         <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.65; 0.66; 1" dur="12s" repeatCount="indefinite"/>
         <animate attributeName="x" values="-315; -315; -293; -293; -271; -271; -249; -249; -227; -227; -205; -205; -183; -183; -161; -161; -139; -139; -117; -117; -95; -95; -73; -73; -51; -51; -29; -29; -7; -7; 15; 15; 37; 37; 59; 59; 81; 81; 103; 103; 125; 125; 147; 147; 169; 169; 191; 191; 213; 213; 235; 235; 257; 257; 279; 279; 301; 301; 323; 323; 345; 345; -315" keyTimes="0; 0.012; 0.014; 0.024; 0.026; 0.036; 0.038; 0.048; 0.050; 0.060; 0.062; 0.072; 0.074; 0.084; 0.086; 0.096; 0.098; 0.108; 0.110; 0.120; 0.122; 0.132; 0.134; 0.144; 0.146; 0.156; 0.158; 0.168; 0.170; 0.180; 0.182; 0.192; 0.194; 0.204; 0.206; 0.216; 0.218; 0.228; 0.230; 0.240; 0.242; 0.252; 0.254; 0.264; 0.266; 0.276; 0.278; 0.288; 0.290; 0.300; 0.302; 0.312; 0.314; 0.324; 0.326; 0.336; 0.338; 0.348; 0.350; 0.648; 1" dur="12s" repeatCount="indefinite" calcMode="linear"/>
